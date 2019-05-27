@@ -1,6 +1,4 @@
 import React from "react";
-import Header from "../../components/Header";
-import Footer from "../../components/Footer";
 import Puzz from "../../image/puzzle1.png";
 import { Case } from "./style";
 
@@ -14,10 +12,9 @@ class Showcase extends React.Component {
           position: "relative",
           minHeight: "100vh",
           minWidth: "75vw",
-          paddingBottom: "10px"
+          paddingBottom: "100px"
         }}
       >
-        <Header />
         <h1 style={{ marginLeft: "200px", color: "#f29400" }}>Showcase</h1>
         <Case>
           <div style={{ borderBottom: "2px solid lightgrey" }}>
@@ -58,7 +55,6 @@ class Showcase extends React.Component {
             <img src={Puzz} alt="puzz" />
           </div>
         </Case>
-        <Footer />
       </div>
     );
   }

@@ -1,6 +1,4 @@
 import React from "react";
-import Header from "../../components/Header";
-import Footer from "../../components/Footer";
 import Puzz from "./../../image/puzzle2.png";
 import { Block, Comment } from "./style";
 
@@ -12,17 +10,7 @@ class HomePage extends React.Component {
   }
   render() {
     return (
-      <div
-        id="home"
-        style={{
-          backgroundColor: "white",
-          position: "relative",
-          minHeight: "100vh",
-          minWidth: "75vw",
-          paddingBottom: "150px"
-        }}
-      >
-        <Header />
+      <div>
         <div>
           <div
             style={{
@@ -135,7 +123,6 @@ class HomePage extends React.Component {
             </Block>
           </div>
         </div>
-        <Footer />
       </div>
     );
   }
