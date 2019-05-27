@@ -1,5 +1,5 @@
 import React from "react";
-import Showcase from "./pages";
+import Showcase from "./pages/Showcase/";
 import HomePage from "./pages/HomePage/";
 import Header from "./components/Header/";
 import Footer from "./components/Footer/";
@@ -21,9 +21,6 @@ class App extends React.Component {
           <Header />
           <Route exact path="/" component={HomePage} />
           <Route path="/showcase" component={Showcase} />
-          <Link to="/">Home Page</Link>
-          <br />
-          <Link to="/showcase">Showcase</Link>
           <Footer />
         </div>
       </Router>

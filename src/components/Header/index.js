@@ -1,5 +1,6 @@
 import React from "react";
 import { Button, Logo, Input } from "./style";
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 class Header extends React.Component {
   render() {
@@ -17,8 +18,10 @@ class Header extends React.Component {
         >
           <Button>___</Button>
           <Logo>
-            <h1 style={{}}>Atti-components</h1>
+            <h1>Atti-components</h1>
           </Logo>
+          <Link to="/">Home Page</Link>
+          <Link to="/showcase">Showcase</Link>
           <div style={{ display: "flex", alignItems: "center" }}>
             <Input type="text" placeholder="Search" />
 

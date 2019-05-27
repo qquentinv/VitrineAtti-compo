@@ -5,16 +5,7 @@ import { Case } from "./style";
 class Showcase extends React.Component {
   render() {
     return (
-      <div
-        id="showcase"
-        style={{
-          backgroundColor: "white",
-          position: "relative",
-          minHeight: "100vh",
-          minWidth: "75vw",
-          paddingBottom: "100px"
-        }}
-      >
+      <div>
         <h1 style={{ marginLeft: "200px", color: "#f29400" }}>Showcase</h1>
         <Case>
           <div style={{ borderBottom: "2px solid lightgrey" }}>
