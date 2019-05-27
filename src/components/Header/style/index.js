@@ -18,9 +18,7 @@ export const Button = styled.button`
 `;
 
 export const Logo = styled.div`
-  && {
-    color: white;
-  }
+  color: white;
 `;
 
 export const Input = styled.input.attrs(({ size }) => ({

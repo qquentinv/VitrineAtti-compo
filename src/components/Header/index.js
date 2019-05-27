@@ -15,9 +15,9 @@ class Header extends React.Component {
             marginBottom: "100px"
           }}
         >
-          <Button>---</Button>
+          <Button>___</Button>
           <Logo>
-            <h1>Atti-components</h1>
+            <h1 style={{}}>Atti-components</h1>
           </Logo>
           <div style={{ display: "flex", alignItems: "center" }}>
             <Input type="text" placeholder="Search" />

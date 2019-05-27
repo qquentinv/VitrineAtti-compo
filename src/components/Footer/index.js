@@ -1,5 +1,5 @@
 import React from "react";
-//import attineosTheme from "./../themes/attineosTheme/index.js";
+import { Link } from "react-router";
 
 class Footer extends React.Component {
   render() {
