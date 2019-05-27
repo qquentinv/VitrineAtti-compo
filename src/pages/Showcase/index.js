@@ -8,7 +8,7 @@ class Showcase extends React.Component {
       <div>
         <h1 style={{ marginLeft: "200px", color: "#f29400" }}>Showcase</h1>
         <Case>
-          <div style={{ borderBottom: "2px solid lightgrey" }}>
+          <div>
             <div
               style={{
                 display: "flex",
@@ -22,7 +22,8 @@ class Showcase extends React.Component {
               style={{
                 justifyContent: "center",
                 marginLeft: "200px",
-                marginRight: "200px"
+                marginRight: "200px",
+                borderBottom: "1px solid lightgrey"
               }}
             >
               <p>

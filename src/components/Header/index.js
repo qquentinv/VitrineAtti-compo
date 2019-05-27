@@ -1,6 +1,7 @@
 import React from "react";
 import { Button, Logo, Input } from "./style";
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
+import Menu from "./../Menu";
 
 class Header extends React.Component {
   render() {
@@ -16,12 +17,10 @@ class Header extends React.Component {
             marginBottom: "100px"
           }}
         >
-          <Button>___</Button>
+          <Menu />
           <Logo>
             <h1>Atti-components</h1>
           </Logo>
-          <Link to="/">Home Page</Link>
-          <Link to="/showcase">Showcase</Link>
           <div style={{ display: "flex", alignItems: "center" }}>
             <Input type="text" placeholder="Search" />
 

@@ -1,0 +1,144 @@
+import styled from "styled-components";
+import { Link } from "react-router-dom";
+
+export const MenuNavMobile = styled("nav")`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  padding: 20px;
+`;
+
+export const MenuOpenerLine = styled("div")`
+  position: absolute;
+  height: 5px;
+  width: 35px;
+  background-color: white;
+  transition: transform 0.2s ease;
+`;
+
+export const MenuOpenerContainer = styled.span`
+  position: relative;
+  display: block;
+  width: 35px;
+  height: 30px;
+  z-index: 30;
+  cursor: pointer;
+
+  ${MenuOpenerLine} {
+    &:nth-child(2) {
+      margin-top: 10px;
+    }
+
+    &:nth-child(3) {
+      margin-top: 20px;
+    }
+  }
+
+  transition: all 0.5s;
+`;
+
+export const BackgroundFade = styled("div")`
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(7, 7, 7, 0.7);
+  top: 0px;
+  left: ${({ opened }) => (opened ? "0" : "-100vw")};
+  visibility: ${({ opened }) => (opened ? "visible" : "hidden")};
+  opacity: ${({ opened, fade }) => (opened ? fade : "0")};
+  transition: ${({ opened }) =>
+    opened ? "opacity 0.3s linear" : "visibility 0s 0.3s, opacity 0.3s linear"};
+  overflow: hidden;
+`;
+
+export const SideMenu = styled("div").attrs(props => ({
+  style: {
+    left: props.position
+  }
+}))`
+  position: fixed;
+  height: 100%;
+  width: 250px;
+  background-color: black;
+  top: 0px;
+  transition: ease 0.3s all;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 4px 4px;
+  max-height: 100%;
+  overflow: hidden;
+  z-index: 999;
+`;
+
+export const MenuFooter = styled.div`
+  display: flex;
+  position: absolute;
+  flex-wrap: wrap;
+  left: 0px;
+  bottom: 0px;
+  justify-content: center;
+  padding: 4px 4px;
+  width: 100%;
+  background-color: white;
+
+  > a {
+    width: 50%;
+  }
+
+  > hr {
+    margin-top: 0;
+  }
+`;
+
+export const MenuList = styled("div")`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-height: 75%;
+  height: 75%;
+  width: 100%;
+  padding-bottom: 10px;
+`;
+
+export const MenuSubLink = styled(Link)`
+  color: black;
+  display: flex;
+  cursor: pointer;
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  padding: 4px 4px;
+  border: none;
+  font-size: 15px;
+  font-weight: bold;
+  text-decoration: none;
+  word-break: break-all;
+  &:hover,
+  &.active {
+    background-color: white;
+  }
+`;
+
+export const MenuLink = styled(Link)`
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  height: auto;
+  width: 100%;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  margin: 5px;
+  padding: 5px;
+  font-size: 20px;
+  text-decoration: none;
+  cursor: pointer;
+  &:hover,
+  &.active {
+    background-color: white;
+  }
+`;

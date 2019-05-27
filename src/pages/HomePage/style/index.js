@@ -11,5 +11,5 @@ export const Block = styled.div`
   width: 40%;
   padding: 15px;
   margin-top: 100px;
-  border: 2px solid lightgrey;
+  border: 1px solid lightgrey;
 `;
