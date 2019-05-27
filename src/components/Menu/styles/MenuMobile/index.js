@@ -46,20 +46,17 @@ export const BackgroundFade = styled("div")`
   top: 0px;
   left: ${({ opened }) => (opened ? "0" : "-100vw")};
   visibility: ${({ opened }) => (opened ? "visible" : "hidden")};
-  opacity: ${({ opened, fade }) => (opened ? fade : "0")};
+  opacity: ${({ opened }) => (opened ? "1" : "0")};
   transition: ${({ opened }) =>
     opened ? "opacity 0.3s linear" : "visibility 0s 0.3s, opacity 0.3s linear"};
   overflow: hidden;
 `;
 
-export const SideMenu = styled("div").attrs(props => ({
-  style: {
-    left: props.position
-  }
-}))`
+export const SideMenu = styled("div")`
   position: fixed;
   height: 100%;
   width: 250px;
+  left: ${({ opened }) => (opened ? "0" : "-250px")};
   background-color: black;
   top: 0px;
   transition: ease 0.3s all;

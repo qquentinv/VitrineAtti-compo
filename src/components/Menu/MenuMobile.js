@@ -29,9 +29,6 @@ class MenuMobile extends Component {
   render() {
     const { isMenuOpen } = this.state;
 
-    const fadeEffect = !isMenuOpen ? 0 : 1;
-    const menuPosition = !isMenuOpen ? -250 : 0;
-
     return (
       <MenuNavMobile>
         <MenuOpenerContainer onClick={this.handleClick.bind(this)}>
@@ -41,14 +38,13 @@ class MenuMobile extends Component {
         </MenuOpenerContainer>
 
         <BackgroundFade
-          fade={fadeEffect}
           opened={isMenuOpen}
           onClick={this.handleClick.bind(this)}
         />
 
-        <SideMenu opened={isMenuOpen} position={menuPosition + "px"}>
+        <SideMenu opened={isMenuOpen}>
           <MenuList>
-            <MenuLink onClick={this.handleClick.bind(this)} to={`/`}>
+            <MenuLink onClick={this.handleClick.bind(this)} to="/">
               Home Page
             </MenuLink>
 
@@ -56,7 +52,7 @@ class MenuMobile extends Component {
               Showcase
             </MenuLink>
 
-            <MenuLink onClick={this.handleClick.bind(this)} to={`/`}>
+            <MenuLink onClick={this.handleClick.bind(this)} to="/">
               ...
             </MenuLink>
           </MenuList>
