@@ -1,6 +1,6 @@
 import React from "react";
-import Header from "../Header";
-import Footer from "../Footer";
+import Header from "../../components/Header";
+import Footer from "../../components/Footer";
 import Puzz from "./../../image/puzzle2.png";
 import { Block, Comment } from "./style";
 
@@ -13,6 +13,7 @@ class HomePage extends React.Component {
   render() {
     return (
       <div
+        id="home"
         style={{
           backgroundColor: "white",
           position: "relative",
