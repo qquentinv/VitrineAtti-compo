@@ -12,10 +12,22 @@ export const Button = styled.button`
   border-radius: 4px;
   display: flex;
   align-items: center;
+  img.black {
+    display: none;
+  }
+  img.white {
+    display: flex;
+  }
 
   :hover {
     background: ${props => (props.primary ? "#white" : "white")};
     color: ${props => (props.primary ? "#f29400" : "#f29400")};
+    img.black {
+      display: flex;
+    }
+    img.white {
+      display: none;
+    }
   }
 `;
 
