@@ -9,7 +9,8 @@ export const Block = styled.div`
     props.primary ? "rgb(247, 247, 247)" : "rgb(247, 247, 247)"};
   margin: 20px;
   width: 40%;
-  padding: 15px;
+  padding: 25px;
   margin-top: 100px;
   border: 1px solid lightgrey;
+  border-radius: 10px;
 `;
