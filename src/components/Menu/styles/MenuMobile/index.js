@@ -79,7 +79,7 @@ export const MenuFooter = styled.div`
   justify-content: center;
   padding: 4px 4px;
   width: 100%;
-  background-color: white;
+  background-color: black;
 
   > a {
     width: 50%;
@@ -101,7 +101,7 @@ export const MenuList = styled("div")`
 `;
 
 export const MenuSubLink = styled(Link)`
-  color: black;
+  color: white;
   display: flex;
   cursor: pointer;
   height: 100%;
