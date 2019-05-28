@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router";
 
 class Footer extends React.Component {
   render() {
@@ -10,7 +9,7 @@ class Footer extends React.Component {
       >
         <div className="row" style={{ backgroundColor: "#f29400" }}>
           <p style={{ marginLeft: "120px", padding: "17px", color: "white" }}>
-            Generated with me
+            Generated with ReactJS
           </p>
         </div>
       </footer>
