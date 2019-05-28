@@ -11,7 +11,7 @@ export const Button = styled.button`
   border: 1px solid white;
   border-radius: 4px;
   display: flex;
-  alignitems: center;
+  align-items: center;
 
   :hover {
     background: ${props => (props.primary ? "#white" : "white")};
