@@ -72,7 +72,7 @@ class HomePage extends React.Component {
               <code>
                 <span>npm install --save atti-components</span>
                 <br />
-                <Comment>// Or</Comment>
+                <Comment>{"// Or"}</Comment>
                 <br />
                 <span>yarn add atti-components</span>
               </code>
@@ -87,7 +87,7 @@ class HomePage extends React.Component {
               <code>
                 <span>npm install --save atti-components@next</span>
                 <br />
-                <Comment>// Or</Comment>
+                <Comment>{"// Or"}</Comment>
                 <br />
                 <span>yarn add atti-components@next</span>
               </code>
@@ -102,12 +102,12 @@ class HomePage extends React.Component {
               </p>
               <div>
                 <code className="code javascript">
-                  <Comment>// Import Web components</Comment>
+                  <Comment>{"// Import Web components"}</Comment>
                   <br />
                   <span>{this.codeUse1}</span>
                   <br />
                   <br />
-                  <Comment>// Import Native components</Comment>
+                  <Comment>{"// Import Native components"}</Comment>
                   <br />
                   <span>{this.codeUse2}</span>
                   <br />
