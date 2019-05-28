@@ -23,7 +23,7 @@ class HomePage extends React.Component {
           >
             <div
               style={{
-                width: "30%"
+                width: "35%"
               }}
             >
               <h1
@@ -35,15 +35,8 @@ class HomePage extends React.Component {
                 Atti-components
               </h1>
               <br />
-              <h3
-                style={
-                  {
-                    /*  to create Web and Mobile interfaces. */
-                  }
-                }
-              >
-                React component library
-              </h3>
+              <h3>Create interfaces with React component library</h3>
+              <br />
               <p>
                 This library focuses on component customization and
                 accessibility. It also aims to make the code shareable between
@@ -53,7 +46,7 @@ class HomePage extends React.Component {
             </div>
             <div
               style={{
-                width: "40%",
+                width: "35%",
                 display: "flex",
                 justifyContent: "center"
               }}
