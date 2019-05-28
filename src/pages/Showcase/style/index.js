@@ -8,4 +8,5 @@ export const Case = styled.div`
   padding: 15px;
   margin-top: 100px;
   border: 1px solid lightgrey;
+  border-radius: 10px;
 `;
