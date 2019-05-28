@@ -1,6 +1,7 @@
 import React from "react";
 import Showcase from "./pages/Showcase/";
 import HomePage from "./pages/HomePage/";
+import Tutorials from "./pages/Tutorials/";
 import Header from "./components/Header/";
 import Footer from "./components/Footer/";
 import { BrowserRouter as Router, Route } from "react-router-dom";
@@ -20,6 +21,7 @@ class App extends React.Component {
         >
           <Header />
           <Route exact path="/" component={HomePage} />
+          <Route path="/tutorials" component={Tutorials} />
           <Route path="/showcase" component={Showcase} />
           <Footer />
         </div>

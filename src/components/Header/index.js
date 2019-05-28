@@ -1,6 +1,7 @@
 import React from "react";
 import { Button, Logo, Input } from "./style";
 import Menu from "./../Menu";
+import GH from "./../../image/GitHub-Mark-Light-32px.png";
 
 class Header extends React.Component {
   render() {
@@ -29,7 +30,8 @@ class Header extends React.Component {
                   "https://github.com/attineos/atti-components";
               }}
             >
-              Github
+              <img src={GH} alt="GitHub-img" />
+              &nbsp; GitHub
             </Button>
           </div>
         </div>

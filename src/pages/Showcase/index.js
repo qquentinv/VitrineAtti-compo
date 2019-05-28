@@ -1,5 +1,5 @@
 import React from "react";
-import Puzz from "../../image/puzzle1.png";
+import Imgatti from "../../image/atti-compo.png";
 import { Case } from "./style";
 
 class Showcase extends React.Component {
@@ -44,7 +44,7 @@ class Showcase extends React.Component {
               justifyContent: "center"
             }}
           >
-            <img src={Puzz} alt="puzz" />
+            <img src={Imgatti} alt="atti-compo" />
           </div>
         </Case>
       </div>

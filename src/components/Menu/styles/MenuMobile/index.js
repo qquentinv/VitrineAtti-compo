@@ -57,7 +57,7 @@ export const SideMenu = styled("div")`
   height: 100%;
   width: 250px;
   left: ${({ opened }) => (opened ? "0" : "-250px")};
-  background-color: black;
+  background-color: #f29400;
   top: 0px;
   transition: ease 0.3s all;
   display: flex;
@@ -79,7 +79,7 @@ export const MenuFooter = styled.div`
   justify-content: center;
   padding: 4px 4px;
   width: 100%;
-  background-color: black;
+  background-color: #f29400;
 
   > a {
     width: 50%;

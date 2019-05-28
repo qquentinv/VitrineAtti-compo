@@ -10,6 +10,8 @@ export const Button = styled.button`
   padding: 0.45em 1em;
   border: 1px solid white;
   border-radius: 4px;
+  display: flex;
+  alignitems: center;
 
   :hover {
     background: ${props => (props.primary ? "#white" : "white")};
