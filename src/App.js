@@ -4,6 +4,7 @@ import HomePage from "./pages/HomePage/";
 import Tutorials from "./pages/Tutorials/";
 import Header from "./components/Header/";
 import Footer from "./components/Footer/";
+import About from "./pages/About/";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 
 class App extends React.Component {
@@ -23,6 +24,7 @@ class App extends React.Component {
           <Route exact path="/" component={HomePage} />
           <Route path="/tutorials" component={Tutorials} />
           <Route path="/showcase" component={Showcase} />
+          <Route path="/about" component={About} />
           <Footer />
         </div>
       </Router>
