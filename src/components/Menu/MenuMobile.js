@@ -53,6 +53,12 @@ class MenuMobile extends Component {
             <MenuLink onClick={this.handleClick.bind(this)} to="/showcase">
               Showcase
             </MenuLink>
+            <MenuLink
+              onClick={this.handleClick.bind(this)}
+              to="/showcase/atti-compo"
+            >
+              Showcasies
+            </MenuLink>
             <MenuLink onClick={this.handleClick.bind(this)} to="/">
               ...
             </MenuLink>
