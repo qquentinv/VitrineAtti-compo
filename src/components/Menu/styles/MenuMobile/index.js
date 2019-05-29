@@ -64,7 +64,6 @@ export const SideMenu = styled("div")`
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding: 4px 4px;
   max-height: 100%;
   overflow: hidden;
   z-index: 999;
@@ -117,6 +116,8 @@ export const MenuSubLink = styled(Link)`
   &:hover,
   &.active {
     background-color: white;
+    color: #f29400;
+    text-decoration: none;
   }
 `;
 
@@ -137,5 +138,7 @@ export const MenuLink = styled(Link)`
   &:hover,
   &.active {
     background-color: white;
+    color: #f29400;
+    text-decoration: none;
   }
 `;

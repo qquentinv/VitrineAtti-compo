@@ -28,8 +28,7 @@ class HomePage extends React.Component {
             >
               <h1
                 style={{
-                  color: "#f29400",
-                  textAlign: "center"
+                  color: "#f29400"
                 }}
               >
                 Atti-components
