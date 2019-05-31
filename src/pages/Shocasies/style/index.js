@@ -32,3 +32,8 @@ export const Ecrit = styled.h1`
   text-align: center;
   margin: 451px;
 `;
+
+export const Content = styled.div`
+  padding-top: 100px;
+  padding-bottom: 174px;
+`;

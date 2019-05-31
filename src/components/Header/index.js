@@ -14,8 +14,7 @@ class Header extends React.Component {
             backgroundColor: "#f29400",
             display: "flex",
             alignItems: "center",
-            justifyContent: "space-between",
-            marginBottom: "100px"
+            justifyContent: "space-between"
           }}
         >
           <Menu />

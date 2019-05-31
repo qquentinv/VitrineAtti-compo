@@ -19,8 +19,7 @@ class App extends React.Component {
               backgroundColor: "white",
               position: "relative",
               minHeight: "100vh",
-              minWidth: "75vw",
-              paddingBottom: "100px"
+              minWidth: "75vw"
             }}
           >
             <Header />

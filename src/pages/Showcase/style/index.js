@@ -1,12 +1,23 @@
 import styled from "styled-components";
 
+export const Content = styled.div`
+  padding-top: 100px;
+  padding-bottom: 174px;
+  background-color: rgb(247, 247, 247);
+`;
+
+export const Ligne = styled.div`
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 30px;
+  margin-top: 50px;
+`;
+
 export const Case = styled.div`
   background: ${props => (props.primary ? "white" : "white")};
-  margin: 20px;
-  width: 50%;
-  padding: 25px;
-  margin-top: 20px;
-  box-shadow: 1px 1px 1px lightgrey;
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2);
+  text-align: center;
+  padding: 20px;
 `;
 
 export const Button = styled.button`
@@ -16,7 +27,8 @@ export const Button = styled.button`
   margin: 1em;
   padding: 0.45em 1em;
   border: 1px solid white;
-
+  margin-right: auto;
+  margin-left: auto;
   display: flex;
   align-items: center;
   img.black {
@@ -25,17 +37,4 @@ export const Button = styled.button`
   img.white {
     display: flex;
   }
-`;
-
-export const Ligne = styled.div`
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-`;
-
-export const CaseAlign = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
 `;

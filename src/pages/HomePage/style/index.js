@@ -7,9 +7,16 @@ export const Comment = styled.span`
 export const Block = styled.div`
   background: ${props =>
     props.primary ? "rgb(247, 247, 247)" : "rgb(247, 247, 247)"};
-  margin: 15px;
   width: 50%;
   padding: 25px;
-  margin-top: 100px;
   border: 1px solid lightgrey;
+
+  & + & {
+    margin-left: 30px;
+  }
+`;
+
+export const Content = styled.div`
+  padding-top: 100px;
+  padding-bottom: 100px;
 `;
