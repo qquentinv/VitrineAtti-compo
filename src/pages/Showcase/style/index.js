@@ -6,7 +6,7 @@ export const Case = styled.div`
   width: 40%;
   padding: 25px;
   margin-top: 50px;
-  border: 1px solid lightgrey;
+  box-shadow: 1px 1px 1px lightgrey;
   border-radius: 10px;
 `;
 

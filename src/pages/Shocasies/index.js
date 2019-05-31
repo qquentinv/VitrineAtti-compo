@@ -1,7 +1,7 @@
 import React from "react";
 import Img from "../../image/atti-compo.png";
 import { Image, Background, Ecrit } from "./style";
-import { Container } from "atti-components";
+import { Container, BigText } from "atti-components";
 
 class Showcasies extends React.Component {
   render() {
@@ -36,15 +36,19 @@ class Showcasies extends React.Component {
             justifyContent: "center"
           }}
         >
-          <div style={{ width: "50%" }}>
-            <p>
+          <div
+            style={{
+              width: "100%"
+            }}
+          >
+            <BigText mb="s10">
               Epigonum nec ducitur industria si Montius sed orator res nec et et
               insimulasset Epigonum ostendens qui quaestor et philosophus sed
               quaestor fabricarum intepesceret orator ducitur qui Eusebius
               tribunos promittentes agitari Lycia philosophus quaerebatur inter
               armorum manus nequid novas tribunos ducitur manus sed nec ab
               Eusebium inter philosophus spiritum dignitatem increpabat.
-            </p>
+            </BigText>
           </div>
         </div>
       </Container>

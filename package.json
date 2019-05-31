@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "atti-components": "^0.1.1",
+    "atti-components": "0.1.0-rc28",
     "bootstrap": "^4.3.1",
     "react": "^16.8.6",
     "react-awesome-button": "^6.1.0",
