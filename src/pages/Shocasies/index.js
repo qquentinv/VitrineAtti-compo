@@ -35,7 +35,7 @@ class Showcasies extends React.Component {
             justifyContent: "center"
           }}
         >
-          <div style={{ width: "45%" }}>
+          <div style={{ width: "50%" }}>
             <p>
               Epigonum nec ducitur industria si Montius sed orator res nec et et
               insimulasset Epigonum ostendens qui quaestor et philosophus sed
