@@ -1,8 +1,7 @@
 import styled from "styled-components";
 
 export const Case = styled.div`
-  background: ${props =>
-    props.primary ? "rgb(247, 247, 247)" : "rgb(247, 247, 247)"};
+  background: ${props => (props.primary ? "white" : "white")};
   margin: 50px;
   width: 40%;
   padding: 25px;
@@ -12,7 +11,6 @@ export const Case = styled.div`
 `;
 
 export const Button = styled.button`
-  /* Adapt the colors based on primary prop */
   background: ${props => (props.primary ? "#f29400" : "#f29400")};
   color: ${props => (props.primary ? "white" : "white")};
 
@@ -40,4 +38,19 @@ export const Button = styled.button`
       display: none;
     }
   }
+`;
+
+export const Ligne = styled.div`
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 10px;
+  flex-direction: row;
+`;
+
+export const CaseAlign = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 `;

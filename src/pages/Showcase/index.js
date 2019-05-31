@@ -1,32 +1,18 @@
 import React from "react";
 import Imgatti from "../../image/puzzle.png";
-import { Case, Button } from "./style";
+import { Case, Button, Ligne, CaseAlign } from "./style";
+import { Container } from "atti-components";
 
 class Showcase extends React.Component {
   render() {
     return (
-      <div>
+      <Container style={{ backgroundColor: "rgb(247,247,247)" }}>
         <div style={{ display: "flex", justifyContent: "center" }}>
           <h1 style={{ color: "#f29400" }}>Showcase</h1>
         </div>
-        <div
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            width: "100%",
-            marginTop: "10px",
-            flexDirection: "row"
-          }}
-        >
+        <Ligne>
           <Case>
-            <div
-              style={{
-                display: "flex",
-                flexDirection: "column",
-                alignItems: "center",
-                justifyContent: "center"
-              }}
-            >
+            <CaseAlign>
               <img
                 onClick={() => {
                   window.location.href = "/showcase/atti-compo";
@@ -55,17 +41,10 @@ class Showcase extends React.Component {
               >
                 En savoir +{" "}
               </Button>
-            </div>
+            </CaseAlign>
           </Case>
           <Case>
-            <div
-              style={{
-                display: "flex",
-                flexDirection: "column",
-                alignItems: "center",
-                justifyContent: "center"
-              }}
-            >
+            <CaseAlign>
               <img
                 onClick={() => {
                   window.location.href = "/showcase/atti-compo";
@@ -94,27 +73,12 @@ class Showcase extends React.Component {
               >
                 En savoir +{" "}
               </Button>
-            </div>
+            </CaseAlign>
           </Case>
-        </div>
-        <div
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            width: "100%",
-            marginTop: "10px",
-            flexDirection: "row"
-          }}
-        >
+        </Ligne>
+        <Ligne>
           <Case>
-            <div
-              style={{
-                display: "flex",
-                flexDirection: "column",
-                alignItems: "center",
-                justifyContent: "center"
-              }}
-            >
+            <CaseAlign>
               <img
                 onClick={() => {
                   window.location.href = "/showcase/atti-compo";
@@ -143,17 +107,10 @@ class Showcase extends React.Component {
               >
                 En savoir +{" "}
               </Button>
-            </div>
+            </CaseAlign>
           </Case>
           <Case>
-            <div
-              style={{
-                display: "flex",
-                flexDirection: "column",
-                alignItems: "center",
-                justifyContent: "center"
-              }}
-            >
+            <CaseAlign>
               <img
                 onClick={() => {
                   window.location.href = "/showcase/atti-compo";
@@ -182,10 +139,10 @@ class Showcase extends React.Component {
               >
                 En savoir +{" "}
               </Button>
-            </div>
+            </CaseAlign>
           </Case>
-        </div>
-      </div>
+        </Ligne>
+      </Container>
     );
   }
 }

@@ -1,6 +1,7 @@
 import React from "react";
 import Puzz from "./../../image/puzzle2.png";
 import { Block, Comment } from "./style";
+import { Container } from "atti-components";
 
 class HomePage extends React.Component {
   constructor(props) {
@@ -10,7 +11,7 @@ class HomePage extends React.Component {
   }
   render() {
     return (
-      <div>
+      <Container>
         <div>
           <div
             style={{
@@ -115,7 +116,7 @@ class HomePage extends React.Component {
             </Block>
           </div>
         </div>
-      </div>
+      </Container>
     );
   }
 }
