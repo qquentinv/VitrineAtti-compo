@@ -7,6 +7,7 @@ export const MenuNavMobile = styled("nav")`
   justify-content: space-between;
   height: 100%;
   padding: 20px;
+  z-index: 3;
 `;
 
 export const MenuOpenerLine = styled("div")`

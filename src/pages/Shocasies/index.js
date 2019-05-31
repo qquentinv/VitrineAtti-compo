@@ -1,5 +1,6 @@
 import React from "react";
 import Img from "../../image/atti-compo.png";
+import { Image, Background, Ecrit } from "./style";
 
 class Showcasies extends React.Component {
   render() {
@@ -8,23 +9,33 @@ class Showcasies extends React.Component {
         <div
           style={{
             display: "flex",
-            justifyContent: "center"
+            justifyContent: "center",
+            position: "relative"
           }}
         >
-          <img src={Img} alt="puzz" />
+          <Image src={Img} alt="puzz">
+            <Background
+              onClick={() => {
+                window.location.href = "https://atti-components.netlify.com/";
+              }}
+            >
+              <Ecrit>Allez sur la page</Ecrit>
+            </Background>
+          </Image>
         </div>
         <br />
         <br />
         <div style={{ display: "flex", justifyContent: "center" }}>
           <h1 style={{ color: "#f29400" }}>Atti-compo</h1>
         </div>
+        <br />
         <div
           style={{
             display: "flex",
-            justifyContent: "space-around"
+            justifyContent: "center"
           }}
         >
-          <div>
+          <div style={{ width: "45%" }}>
             <p>
               Epigonum nec ducitur industria si Montius sed orator res nec et et
               insimulasset Epigonum ostendens qui quaestor et philosophus sed

@@ -1,6 +1,6 @@
 import React from "react";
 import Imgatti from "../../image/puzzle.png";
-import { Case } from "./style";
+import { Case, Button } from "./style";
 
 class Showcase extends React.Component {
   render() {
@@ -27,10 +27,34 @@ class Showcase extends React.Component {
                 justifyContent: "center"
               }}
             >
-              <img src={Imgatti} alt="atti-compo" />
+              <img
+                onClick={() => {
+                  window.location.href = "/showcase/atti-compo";
+                }}
+                src={Imgatti}
+                alt="atti-compo"
+              />
+              <br />
               <div>
-                <h1>Explain</h1>
+                <h1
+                  onClick={() => {
+                    window.location.href = "/showcase/atti-compo";
+                  }}
+                >
+                  Explain
+                </h1>
               </div>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+                id pretium ipsum.
+              </p>
+              <Button
+                onClick={() => {
+                  window.location.href = "/showcase/atti-compo";
+                }}
+              >
+                En savoir +{" "}
+              </Button>
             </div>
           </Case>
           <Case>
@@ -42,10 +66,34 @@ class Showcase extends React.Component {
                 justifyContent: "center"
               }}
             >
-              <img src={Imgatti} alt="atti-compo" />
+              <img
+                onClick={() => {
+                  window.location.href = "/showcase/atti-compo";
+                }}
+                src={Imgatti}
+                alt="atti-compo"
+              />
+              <br />
               <div>
-                <h1>Explain</h1>
+                <h1
+                  onClick={() => {
+                    window.location.href = "/showcase/atti-compo";
+                  }}
+                >
+                  Explain
+                </h1>
               </div>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+                id pretium ipsum.
+              </p>
+              <Button
+                onClick={() => {
+                  window.location.href = "/showcase/atti-compo";
+                }}
+              >
+                En savoir +{" "}
+              </Button>
             </div>
           </Case>
         </div>
@@ -67,10 +115,34 @@ class Showcase extends React.Component {
                 justifyContent: "center"
               }}
             >
-              <img src={Imgatti} alt="atti-compo" />
+              <img
+                onClick={() => {
+                  window.location.href = "/showcase/atti-compo";
+                }}
+                src={Imgatti}
+                alt="atti-compo"
+              />
+              <br />
               <div>
-                <h1>Explain</h1>
+                <h1
+                  onClick={() => {
+                    window.location.href = "/showcase/atti-compo";
+                  }}
+                >
+                  Explain
+                </h1>
               </div>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+                id pretium ipsum.
+              </p>
+              <Button
+                onClick={() => {
+                  window.location.href = "/showcase/atti-compo";
+                }}
+              >
+                En savoir +{" "}
+              </Button>
             </div>
           </Case>
           <Case>
@@ -82,10 +154,34 @@ class Showcase extends React.Component {
                 justifyContent: "center"
               }}
             >
-              <img src={Imgatti} alt="atti-compo" />
+              <img
+                onClick={() => {
+                  window.location.href = "/showcase/atti-compo";
+                }}
+                src={Imgatti}
+                alt="atti-compo"
+              />
+              <br />
               <div>
-                <h1>Explain</h1>
+                <h1
+                  onClick={() => {
+                    window.location.href = "/showcase/atti-compo";
+                  }}
+                >
+                  Explain
+                </h1>
               </div>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+                id pretium ipsum.
+              </p>
+              <Button
+                onClick={() => {
+                  window.location.href = "/showcase/atti-compo";
+                }}
+              >
+                En savoir +{" "}
+              </Button>
             </div>
           </Case>
         </div>
