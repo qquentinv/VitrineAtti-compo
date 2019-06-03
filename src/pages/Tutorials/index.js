@@ -18,11 +18,42 @@ class Tutorials extends React.Component {
           <div style={{ marginLeft: "150px" }}>
             <Header3>
               <ul>
-                <Li>Latius Sericus palaestrita vincula ea</Li>
-                <Li>Latius multitudine repellere educata superabatur</Li>
-                <Li>Per per constrinxerunt membrorum corpora</Li>
-                <Li>Enim Ad difficiles istum honoribus</Li>
-                <Li>Per castra Galli praepotens perferens</Li>
+                <Li
+                  onClick={() => {
+                    window.location.href = "/tutorials/explain";
+                  }}
+                >
+                  Latius Sericus palaestrita vincula ea
+                </Li>
+                <Li
+                  onClick={() => {
+                    window.location.href = "/tutorials/explain";
+                  }}
+                >
+                  Latius multitudine repellere educata superabatur
+                </Li>
+                <Li
+                  onClick={() => {
+                    window.location.href = "/tutorials/explain";
+                  }}
+                >
+                  Per per constrinxerunt membrorum corpora
+                </Li>
+                <Li
+                  onClick={() => {
+                    window.location.href = "/tutorials/explain";
+                  }}
+                >
+                  {" "}
+                  Enim Ad difficiles istum honoribus
+                </Li>
+                <Li
+                  onClick={() => {
+                    window.location.href = "/tutorials/explain";
+                  }}
+                >
+                  Per castra Galli praepotens perferens
+                </Li>
               </ul>
             </Header3>
           </div>

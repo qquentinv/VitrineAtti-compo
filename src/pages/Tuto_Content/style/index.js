@@ -3,11 +3,12 @@ import { Header2, Header3, BigText } from "atti-components";
 
 export const Content = styled.div`
   padding-top: 100px;
-  padding-bottom: 174px;
+  padding-bottom: 149px;
 `;
 
 export const StyledHeader2 = styled(Header2)`
   margin-bottom: 45px;
+  text-align: center;
 `;
 
 export const StyledHeader3 = styled(Header3)`
@@ -16,4 +17,5 @@ export const StyledHeader3 = styled(Header3)`
 
 export const StyledBigText = styled(BigText)`
   margin: 25px;
+  text-align: justify;
 `;
