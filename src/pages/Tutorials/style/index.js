@@ -12,3 +12,12 @@ export const Li = styled.li`
     color: #f49700;
   }
 `;
+
+export const Title = styled.h1`
+  color: #f29400;
+  margin-bottom: 50px;
+`;
+
+export const Liste = styled.div`
+  margin-left: 150px;
+`;

@@ -1,18 +1,14 @@
 import React from "react";
+import { StyledFooter, StyledText, DivFooter } from "./style";
 
 class Footer extends React.Component {
   render() {
     return (
-      <footer
-        className="container-fluid"
-        style={{ position: "absolute", bottom: 0 }}
-      >
-        <div className="row" style={{ backgroundColor: "#f29400" }}>
-          <p style={{ marginLeft: "120px", padding: "17px", color: "white" }}>
-            Generated with ReactJS
-          </p>
-        </div>
-      </footer>
+      <StyledFooter className="container-fluid">
+        <DivFooter className="row">
+          <StyledText>Generated with ReactJS</StyledText>
+        </DivFooter>
+      </StyledFooter>
     );
   }
 }

@@ -18,5 +18,36 @@ export const Block = styled.div`
 
 export const Content = styled.div`
   padding-top: 100px;
-  padding-bottom: 100px;
+  padding-bottom: 174px;
+`;
+
+export const PresentationTxt = styled.div`
+  margin-top: 30px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+`;
+
+export const StyledImage = styled.div`
+  flex-shrink: 0;
+  margin: 10px;
+`;
+
+export const PresentationTop = styled.div`
+  text-align: center;
+  margin-bottom: 50px;
+`;
+
+export const PresentationBlock = styled.div`
+  display: flex;
+  margintop: 55px;
+  marginbottom: 70px;
+`;
+
+export const Title = styled.h1`
+  color: #f29400;
+`;
+
+export const Subtitle = styled.h3`
+  margin-top: 30px;
 `;

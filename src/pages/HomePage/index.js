@@ -1,6 +1,16 @@
 import React from "react";
 import Puzz from "./../../image/puzzle2.png";
-import { Block, Comment, Content } from "./style";
+import {
+  Block,
+  Comment,
+  Content,
+  PresentationTop,
+  StyledImage,
+  PresentationTxt,
+  PresentationBlock,
+  Title,
+  Subtitle
+} from "./style";
 import { Container } from "atti-components";
 
 class HomePage extends React.Component {
@@ -13,52 +23,24 @@ class HomePage extends React.Component {
     return (
       <Content>
         <Container>
-          <div
-            style={{
-              textAlign: "center"
-            }}
-          >
-            <div
-              style={{
-                flexShrink: 0,
-                margin: "10px"
-              }}
-            >
+          <PresentationTop>
+            <StyledImage>
               <img src={Puzz} alt="puzz" />
-            </div>
-            <div
-              style={{
-                marginTop: "30px",
-                maxWidth: "800px",
-                marginLeft: "auto",
-                marginRight: "auto"
-              }}
-            >
-              <h1
-                style={{
-                  color: "#f29400"
-                }}
-              >
-                Atti-components
-              </h1>
-              <h3 style={{ marginTop: "30px" }}>
+            </StyledImage>
+            <PresentationTxt>
+              <Title>Atti-components</Title>
+              <Subtitle>
                 Create interfaces with React component library
-              </h3>
+              </Subtitle>
               <p>
                 This library focuses on component customization and
                 accessibility. It also aims to make the code shareable between
                 the web version and the mobile (native) version of the interface
                 to accelerate development time.
               </p>
-            </div>
-          </div>
-          <div
-            style={{
-              display: "flex",
-              marginTop: "55px",
-              marginBottom: "70px"
-            }}
-          >
+            </PresentationTxt>
+          </PresentationTop>
+          <PresentationBlock>
             <Block>
               <h3>Installation</h3>
               <h5>Normal installation</h5>
@@ -111,7 +93,7 @@ class HomePage extends React.Component {
                 </code>
               </div>
             </Block>
-          </div>
+          </PresentationBlock>
         </Container>
       </Content>
     );

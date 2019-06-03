@@ -1,5 +1,5 @@
 import React from "react";
-import { Content, Li } from "./style";
+import { Content, Li, Liste, Title } from "./style";
 import { Container, Header3 } from "atti-components";
 
 class Tutorials extends React.Component {
@@ -7,15 +7,8 @@ class Tutorials extends React.Component {
     return (
       <Content>
         <Container>
-          <h1
-            style={{
-              color: "#f29400",
-              marginBottom: "50px"
-            }}
-          >
-            Tutorials
-          </h1>
-          <div style={{ marginLeft: "150px" }}>
+          <Title>Tutorials</Title>
+          <Liste>
             <Header3>
               <ul>
                 <Li
@@ -56,7 +49,7 @@ class Tutorials extends React.Component {
                 </Li>
               </ul>
             </Header3>
-          </div>
+          </Liste>
         </Container>
       </Content>
     );

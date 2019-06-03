@@ -38,3 +38,8 @@ export const Button = styled.button`
     display: flex;
   }
 `;
+
+export const Title = styled.h1`
+  color: #f29400;
+  text-align: center;
+`;

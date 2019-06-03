@@ -31,7 +31,7 @@ export const Button = styled.button`
   }
 `;
 
-export const Logo = styled.div`
+export const Title = styled.h1`
   color: white;
 `;
 
@@ -46,4 +46,11 @@ export const Input = styled.input.attrs(({ size }) => ({
   border-radius: 3px;
   margin: ${props => props.margin};
   padding: ${props => props.padding};
+`;
+
+export const DivHeader = styled.div`
+  background-color: #f29400;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 `;

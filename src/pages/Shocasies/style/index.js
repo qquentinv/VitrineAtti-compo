@@ -37,3 +37,16 @@ export const Content = styled.div`
   padding-top: 100px;
   padding-bottom: 174px;
 `;
+
+export const StyledImage = styled.div`
+  display: flex;
+  position: relative;
+  boxshadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2);
+  margin-bottom: 50px;
+`;
+
+export const Title = styled.h1`
+  color: #f29400;
+  text-align: center;
+  margin-bottom: 30px;
+`;
