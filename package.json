@@ -3,8 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.4.4",
+    "@babel/plugin-proposal-export-namespace-from": "^7.2.0",
     "atti-components": "0.1.0-rc28",
     "bootstrap": "^4.3.1",
+    "lodash": "^4.17.11",
+    "module-resolver": "^1.0.0",
     "react": "^16.8.6",
     "react-awesome-button": "^6.1.0",
     "react-burger-menu": "^2.6.10",

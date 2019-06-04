@@ -2,7 +2,7 @@ import React from "react";
 import { Content, StyledHeader2, StyledHeader3, StyledBigText } from "./style";
 import { Container } from "atti-components";
 
-class Tuto_Content extends React.Component {
+class TutoContent extends React.Component {
   render() {
     return (
       <Content>
@@ -42,4 +42,4 @@ class Tuto_Content extends React.Component {
   }
 }
 
-export default Tuto_Content;
+export default TutoContent;
