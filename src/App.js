@@ -14,6 +14,7 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 class App extends React.Component {
   render() {
     return (
+      
       <ThemeProvider theme={defaultTheme}>
         <Router>
           <div
@@ -27,9 +28,9 @@ class App extends React.Component {
             <Header />
             <Route exact path="/" component={HomePage} />
             <Route exact path="/tutorials" component={Tutorials} />
-            <Route path="/tutorials/explain" component={TutoContent} />
+            <Route exact path="/tutorials/explain" component={TutoContent} />
             <Route exact path="/showcase" component={Showcase} />
-            <Route path="/showcase/atti-compo" component={Showcases} />
+            <Route exact path="/showcase/atti-compo" component={Showcases} />
             <Route path="/about" component={About} />
             <Footer />
           </div>
