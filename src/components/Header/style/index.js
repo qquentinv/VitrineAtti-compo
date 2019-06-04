@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import Menu from "../../Menu";
 
 export const Button = styled.button`
   /* Adapt the colors based on primary prop */
@@ -53,5 +52,21 @@ export const DivHeader = styled.div`
   background-color: #f29400;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+`;
+
+export const Align = styled.div`
+  display: flex;
+  width: 33.3%;
+
+  &.left {
+    justify-content: flex-start;
+  }
+
+  &.center {
+    justify-content: center;
+  }
+
+  &.right {
+    justify-content: flex-end;
+  }
 `;
