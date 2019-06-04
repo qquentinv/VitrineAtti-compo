@@ -20,5 +20,6 @@ export const Title = styled.h1`
 `;
 
 export const Liste = styled.div`
-  margin-left: 150px;
+  display:flex;
+  justify-content:center;
 `;

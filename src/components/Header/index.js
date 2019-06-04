@@ -12,7 +12,13 @@ class Header extends React.Component {
           <Menu />
         </Align>
         <Align className="center">
-          <Title>Atti-components</Title>
+          <Title
+            onClick={() => {
+              window.location.href = "/";
+            }}
+          >
+            Atti-components
+          </Title>
         </Align>
         <Align className="right">
           <Button

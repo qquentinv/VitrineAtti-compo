@@ -33,6 +33,7 @@ export const Button = styled.button`
 
 export const Title = styled.h1`
   color: white;
+  cursor: pointer;
 `;
 
 export const Input = styled.input.attrs(({ size }) => ({
