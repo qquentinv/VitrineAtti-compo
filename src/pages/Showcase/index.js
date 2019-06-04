@@ -17,6 +17,7 @@ class Showcase extends React.Component {
                 }}
                 src={Imgatti}
                 alt="atti-compo"
+                style={{ cursor: "pointer" }}
               />
               <br />
               <div>
@@ -24,6 +25,7 @@ class Showcase extends React.Component {
                   onClick={() => {
                     window.location.href = "/showcase/atti-compo";
                   }}
+                  style={{ cursor: "pointer" }}
                 >
                   Explain
                 </h1>
@@ -36,6 +38,7 @@ class Showcase extends React.Component {
                 onClick={() => {
                   window.location.href = "/showcase/atti-compo";
                 }}
+                style={{ cursor: "pointer" }}
               >
                 En savoir +{" "}
               </Button>
@@ -47,6 +50,7 @@ class Showcase extends React.Component {
                 }}
                 src={Imgatti}
                 alt="atti-compo"
+                style={{ cursor: "pointer" }}
               />
               <br />
               <div>
@@ -54,6 +58,7 @@ class Showcase extends React.Component {
                   onClick={() => {
                     window.location.href = "/showcase/atti-compo";
                   }}
+                  style={{ cursor: "pointer" }}
                 >
                   Explain
                 </h1>
@@ -66,6 +71,7 @@ class Showcase extends React.Component {
                 onClick={() => {
                   window.location.href = "/showcase/atti-compo";
                 }}
+                style={{ cursor: "pointer" }}
               >
                 En savoir +{" "}
               </Button>
@@ -77,6 +83,7 @@ class Showcase extends React.Component {
                 }}
                 src={Imgatti}
                 alt="atti-compo"
+                style={{ cursor: "pointer" }}
               />
               <br />
               <div>
@@ -84,6 +91,7 @@ class Showcase extends React.Component {
                   onClick={() => {
                     window.location.href = "/showcase/atti-compo";
                   }}
+                  style={{ cursor: "pointer" }}
                 >
                   Explain
                 </h1>
@@ -96,6 +104,7 @@ class Showcase extends React.Component {
                 onClick={() => {
                   window.location.href = "/showcase/atti-compo";
                 }}
+                style={{ cursor: "pointer" }}
               >
                 En savoir +{" "}
               </Button>
@@ -107,6 +116,7 @@ class Showcase extends React.Component {
                 }}
                 src={Imgatti}
                 alt="atti-compo"
+                style={{ cursor: "pointer" }}
               />
               <br />
               <div>
@@ -114,6 +124,7 @@ class Showcase extends React.Component {
                   onClick={() => {
                     window.location.href = "/showcase/atti-compo";
                   }}
+                  style={{ cursor: "pointer" }}
                 >
                   Explain
                 </h1>
@@ -126,6 +137,7 @@ class Showcase extends React.Component {
                 onClick={() => {
                   window.location.href = "/showcase/atti-compo";
                 }}
+                style={{ cursor: "pointer" }}
               >
                 En savoir +{" "}
               </Button>

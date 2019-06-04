@@ -7,6 +7,7 @@ export const Content = styled.div`
 
 export const Li = styled.li`
   margin-bottom: 45px;
+  cursor: pointer;
 
   :hover {
     color: #f49700;
