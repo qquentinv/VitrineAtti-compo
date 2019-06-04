@@ -1,5 +1,5 @@
 import React from "react";
-import { Button, Title, Input, DivHeader } from "./style";
+import { Button, Title, DivHeader } from "./style";
 import Menu from "./../Menu";
 import GH1 from "./../../image/GitHub-Mark-Light-32px.png";
 import GH2 from "./../../image/GitHub-Mark-32px.png";

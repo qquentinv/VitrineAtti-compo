@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import Menu from "../../Menu";
 
 export const Button = styled.button`
   /* Adapt the colors based on primary prop */
