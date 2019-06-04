@@ -3,6 +3,6 @@ import HomePage from "./HomePage";
 import About from "./About";
 import Tutorials from "./Tutorials";
 import TutoContent from "./TutoContent";
-import Showcasies from "./Showcasies";
+import Showcases from "./Showcases";
 
-export { About, HomePage, Showcase, Showcasies, TutoContent, Tutorials };
+export { About, HomePage, Showcase, Showcases, TutoContent, Tutorials };

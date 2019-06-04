@@ -3,7 +3,7 @@ import Img from "../../image/atti-compo.png";
 import { Image, Background, Ecrit, Content, StyledImage, Title } from "./style";
 import { Container, BigText } from "atti-components";
 
-class Showcasies extends React.Component {
+class Showcases extends React.Component {
   render() {
     return (
       <Content>
@@ -34,4 +34,4 @@ class Showcasies extends React.Component {
   }
 }
 
-export default Showcasies;
+export default Showcases;

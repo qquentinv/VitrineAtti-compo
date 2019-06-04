@@ -1,5 +1,5 @@
 import React from "react";
-import Puzz from "./../../image/puzzle2.png";
+import Puzz from "./../../image/favicon.png";
 import {
   Block,
   Comment,

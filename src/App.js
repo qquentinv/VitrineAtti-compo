@@ -4,7 +4,7 @@ import {
   HomePage,
   Tutorials,
   About,
-  Showcasies,
+  Showcases,
   TutoContent
 } from "./pages";
 import { Header, Footer } from "./components";
@@ -29,7 +29,7 @@ class App extends React.Component {
             <Route exact path="/tutorials" component={Tutorials} />
             <Route path="/tutorials/explain" component={TutoContent} />
             <Route exact path="/showcase" component={Showcase} />
-            <Route path="/showcase/atti-compo" component={Showcasies} />
+            <Route path="/showcase/atti-compo" component={Showcases} />
             <Route path="/about" component={About} />
             <Footer />
           </div>
