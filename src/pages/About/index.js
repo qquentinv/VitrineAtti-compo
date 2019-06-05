@@ -1,11 +1,15 @@
 import React from "react";
+import { Content, StyledHeader2 } from "./style";
+import { Container } from "atti-components";
 
 class About extends React.Component {
   render() {
     return (
-      <h1 style={{ textAlign: "center" }}>
-        This page is about Atti-Components
-      </h1>
+      <Content>
+        <Container>
+          <StyledHeader2>This page is about Atti-Components</StyledHeader2>
+        </Container>
+      </Content>
     );
   }
 }
