@@ -2,8 +2,8 @@ import styled from "styled-components";
 
 export const Button = styled.button`
   /* Adapt the colors based on primary prop */
-  background: ${props => (props.primary ? "#f29400" : "#f29400")};
-  color: ${props => (props.primary ? "white" : "white")};
+  background: ${({ theme }) => theme.colors.supportDanger};
+  color: ${({ theme }) => theme.colors.white};
 
   font-size: 1em;
   margin: 1em;
@@ -34,6 +34,10 @@ export const Button = styled.button`
 export const Title = styled.h1`
   color: white;
   cursor: pointer;
+
+  @media only screen and (max-width: 640px) {
+    font-size: ${({ theme }) => theme.fonts.fontSize.fs12};
+  }
 `;
 
 export const Input = styled.input.attrs(({ size }) => ({
