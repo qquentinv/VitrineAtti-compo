@@ -3,6 +3,12 @@ import styled from "styled-components";
 export const Content = styled.div`
   padding-top: 100px;
   padding-bottom: 174px;
+
+  @media only screen and (max-width: ${({ theme }) =>
+  theme.breakpoints.mobileMax}) {
+    padding-top: 50px;
+    padding-bottom: 87x;
+}
 `;
 
 export const Li = styled.li`
@@ -18,6 +24,11 @@ export const Title = styled.h1`
   color: #f29400;
   margin-bottom: 50px;
   font-size:35px;
+
+  @media only screen and (max-width: ${({ theme }) =>
+  theme.breakpoints.mobileMax}) {
+    text-align:center;
+}
 `;
 
 export const Liste = styled.div`

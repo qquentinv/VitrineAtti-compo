@@ -12,7 +12,7 @@ import { ThemeProvider, defaultTheme } from "atti-components";
 
 import { BrowserRouter as Router, Route } from "react-router-dom";
 
-console.log(defaultTheme);
+console.log(window.location);
 class App extends React.Component {
   render() {
     return (
@@ -27,7 +27,7 @@ class App extends React.Component {
             }}
           >
             <Header />
-            <Route exact path="/home" component={HomePage} />
+            <Route exact path="/" component={HomePage} />
             <Route exact path="/tutorials" component={Tutorials} />
             <Route exact path="/tutorials/explain" component={TutoContent} />
             <Route exact path="/showcase" component={Showcase} />

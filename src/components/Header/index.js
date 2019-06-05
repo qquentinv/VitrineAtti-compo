@@ -14,7 +14,7 @@ class Header extends React.Component {
         <Align className="center">
           <Title
             onClick={() => {
-              window.location.href = "/home";
+              window.location.href = "/";
             }}
           >
             Atti-components

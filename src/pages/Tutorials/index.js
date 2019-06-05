@@ -1,6 +1,6 @@
 import React from "react";
 import { Content, Li, Liste, Title } from "./style";
-import { Container, BigText } from "atti-components";
+import { Container} from "atti-components";
 
 class Tutorials extends React.Component {
   render() {

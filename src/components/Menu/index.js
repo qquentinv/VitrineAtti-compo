@@ -48,8 +48,8 @@ class Menu extends Component {
             <MenuList>
               <MenuLink
                 onClick={this.handleClick.bind(this)}
-                to="/home"
-                className={window.location.href.includes("/home") && "active"}
+                to="/"
+                className={window.location.pathname === "/" && "active"}
               >
                 Home Page
               </MenuLink>

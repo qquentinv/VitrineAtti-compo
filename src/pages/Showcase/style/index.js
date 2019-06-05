@@ -2,8 +2,13 @@ import styled from "styled-components";
 
 export const Content = styled.div`
   padding-top: 100px;
-  padding-bottom: 174px;
+  padding-bottom: 144px;
   background-color: rgb(247, 247, 247);
+  @media only screen and (max-width: ${({ theme }) =>
+      theme.breakpoints.mobileMax}) {
+        padding-top: 50px;
+        padding-bottom: 72x;
+  }
 `;
 
 export const Ligne = styled.div`
@@ -11,6 +16,12 @@ export const Ligne = styled.div`
   grid-template-columns: 1fr 1fr;
   grid-gap: 30px;
   margin-top: 50px;
+
+  @media only screen and (max-width: ${({ theme }) =>
+      theme.breakpoints.mobileMax}) {
+    display: flex;
+    flex-direction: column;
+  }
 `;
 
 export const Case = styled.div`
@@ -18,6 +29,10 @@ export const Case = styled.div`
   box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2);
   text-align: center;
   padding: 20px;
+  @media only screen and (max-width: ${({ theme }) =>
+      theme.breakpoints.mobileMax}) {
+    margin-bottom: 30px;
+  }
 `;
 
 export const Button = styled.button`
@@ -31,15 +46,14 @@ export const Button = styled.button`
   margin-left: auto;
   display: flex;
   align-items: center;
-  img.black {
-    display: none;
-  }
-  img.white {
-    display: flex;
-  }
 `;
 
 export const Title = styled.h1`
   color: #f29400;
   text-align: center;
+`;
+
+export const Img = styled.img`
+    max-width: 100%;
+    height: auto;
 `;

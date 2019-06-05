@@ -1,7 +1,7 @@
 import React from "react";
-import Img from "../../image/atti-compo.png";
+import Imge from "../../image/atti-compo.png";
 import {
-  Image,
+  Img,
   Background,
   Ecrit,
   Content,
@@ -17,15 +17,14 @@ class Showcases extends React.Component {
       <Content>
         <Container>
           <StyledImage>
-            <Image src={Img} alt="puzz">
-              <Background
-                onClick={() => {
-                  window.location.href = "https://atti-components.netlify.com/";
-                }}
-              >
-                <Ecrit>Allez sur la page</Ecrit>
-              </Background>
-            </Image>
+            <Img src={Imge} alt="puzz" />
+            <Background
+              onClick={() => {
+                window.location.href = "https://atti-components.netlify.com/";
+              }}
+            >
+              <Ecrit>Allez sur la page</Ecrit>
+            </Background>
           </StyledImage>
           <Title>Atti-compo</Title>
           <BigText mb="s10">

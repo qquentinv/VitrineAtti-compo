@@ -1,6 +1,6 @@
 import React from "react";
 import Imgatti from "../../image/puzzle.png";
-import { Case, Button, Ligne, Content, Title } from "./style";
+import { Case, Button, Ligne, Content, Title, Img } from "./style";
 import { Container, Text } from "atti-components";
 
 class Showcase extends React.Component {
@@ -11,7 +11,7 @@ class Showcase extends React.Component {
           <Title>Showcase</Title>
           <Ligne>
             <Case>
-              <img
+              <Img
                 onClick={() => {
                   window.location.href = "/showcase/atti-compo";
                 }}
@@ -44,7 +44,7 @@ class Showcase extends React.Component {
               </Button>
             </Case>
             <Case>
-              <img
+              <Img
                 onClick={() => {
                   window.location.href = "/showcase/atti-compo";
                 }}
@@ -77,7 +77,7 @@ class Showcase extends React.Component {
               </Button>
             </Case>
             <Case>
-              <img
+              <Img
                 onClick={() => {
                   window.location.href = "/showcase/atti-compo";
                 }}
@@ -110,7 +110,7 @@ class Showcase extends React.Component {
               </Button>
             </Case>
             <Case>
-              <img
+              <Img
                 onClick={() => {
                   window.location.href = "/showcase/atti-compo";
                 }}
