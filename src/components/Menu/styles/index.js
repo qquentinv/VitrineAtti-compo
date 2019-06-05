@@ -44,7 +44,7 @@ export const MenuOpenerContainer = styled.span`
     }
   }
 
-  transition: all 0.5s;
+  transition: all 0.4s;
 `;
 
 export const BackgroundFade = styled("div")`

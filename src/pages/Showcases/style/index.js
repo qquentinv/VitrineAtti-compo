@@ -25,6 +25,7 @@ export const Background = styled.div`
   opacity: 0;
   z-index: 2;
   transition: all 0.3s linear;
+  cursor: pointer;
 `;
 
 export const Ecrit = styled.h1`
