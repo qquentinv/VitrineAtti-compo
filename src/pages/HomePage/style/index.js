@@ -14,6 +14,16 @@ export const Block = styled.div`
   & + & {
     margin-left: 30px;
   }
+
+  @media only screen and (max-width: ${({ theme }) =>
+    theme.breakpoints.mobileMax}) {
+    width:100%
+    margin-bottom : 30px;
+    & + & {
+      margin-left: 0px;
+    }
+  }
+
 `;
 
 export const Content = styled.div`
@@ -42,6 +52,10 @@ export const PresentationBlock = styled.div`
   display: flex;
   margintop: 55px;
   marginbottom: 70px;
+  @media only screen and (max-width: ${({ theme }) =>
+  theme.breakpoints.mobileMax}) {
+    flex-wrap: wrap;
+  }
 `;
 
 export const Title = styled.h1`

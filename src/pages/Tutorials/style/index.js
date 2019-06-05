@@ -17,9 +17,16 @@ export const Li = styled.li`
 export const Title = styled.h1`
   color: #f29400;
   margin-bottom: 50px;
+  font-size:35px;
 `;
 
 export const Liste = styled.div`
-  display:flex;
-  justify-content:center;
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+
+  @media only screen and (max-width: ${({ theme }) =>
+      theme.breakpoints.mobileMax}) {
+    font-size: 18px;
+  }
 `;

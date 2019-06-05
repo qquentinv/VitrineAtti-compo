@@ -6,7 +6,6 @@ export const StyledFooter = styled.footer`
 `;
 
 export const StyledText = styled.p`
-  margin-left: 120px;
   padding: 17px;
   color: white;
 `;

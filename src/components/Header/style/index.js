@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Button = styled.button`
   /* Adapt the colors based on primary prop */
-  background: ${({ theme }) => theme.colors.supportDanger};
+  background: #f29400;
   color: ${({ theme }) => theme.colors.white};
 
   font-size: 1em;
@@ -20,14 +20,20 @@ export const Button = styled.button`
   }
 
   :hover {
-    background: ${props => (props.primary ? "#white" : "white")};
-    color: ${props => (props.primary ? "#f29400" : "#f29400")};
-    img.black {
+    background: ${({ theme }) => theme.colors.white};
+    color: #f29400 img.black {
       display: flex;
     }
     img.white {
       display: none;
     }
+  }
+
+  @media only screen and (max-width: ${({ theme }) =>
+  theme.breakpoints.mobileMax}) {
+    font-size: 0;
+    border: 0;
+    margin: 15px;
   }
 `;
 
@@ -35,8 +41,9 @@ export const Title = styled.h1`
   color: white;
   cursor: pointer;
 
-  @media only screen and (max-width: 640px) {
-    font-size: ${({ theme }) => theme.fonts.fontSize.fs12};
+  @media only screen and (max-width: ${({ theme }) =>
+  theme.breakpoints.mobileMax}) {
+    font-size: ${({ theme }) => theme.fonts.fontSize.fs24};
   }
 `;
 

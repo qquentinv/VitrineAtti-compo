@@ -76,6 +76,11 @@ export const SideMenu = styled("div")`
   max-height: 100%;
   overflow: hidden;
   z-index: 999;
+
+  @media only screen and (max-width: ${({ theme }) =>
+      theme.breakpoints.mobileMax}) {
+    width: 165px;
+  }
 `;
 
 export const MenuFooter = styled.div`

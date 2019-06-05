@@ -1,6 +1,6 @@
 import React from "react";
 import { Content, Li, Liste, Title } from "./style";
-import { Container, Header3 } from "atti-components";
+import { Container, BigText } from "atti-components";
 
 class Tutorials extends React.Component {
   render() {
@@ -8,8 +8,7 @@ class Tutorials extends React.Component {
       <Content>
         <Container>
           <Title>Tutorials</Title>
-          <Liste>
-            <Header3>
+          <Liste>  
               <ul>
                 <Li
                   onClick={() => {
@@ -48,7 +47,6 @@ class Tutorials extends React.Component {
                   Per castra Galli praepotens perferens
                 </Li>
               </ul>
-            </Header3>
           </Liste>
         </Container>
       </Content>

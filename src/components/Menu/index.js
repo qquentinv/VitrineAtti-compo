@@ -29,45 +29,60 @@ class Menu extends Component {
 
   render() {
     const { isMenuOpen } = this.state;
-
+    console.log(window.location.href.includes("/tutorials"));
     return (
       <MenuContainer>
-      <MenuNavMobile>
-        <MenuOpenerContainer onClick={this.handleClick.bind(this)}>
-          <MenuOpenerLine />
-          <MenuOpenerLine />
-          <MenuOpenerLine />
-        </MenuOpenerContainer>
+        <MenuNavMobile>
+          <MenuOpenerContainer onClick={this.handleClick.bind(this)}>
+            <MenuOpenerLine />
+            <MenuOpenerLine />
+            <MenuOpenerLine />
+          </MenuOpenerContainer>
 
-        <BackgroundFade
-          opened={isMenuOpen}
-          onClick={this.handleClick.bind(this)}
-        />
+          <BackgroundFade
+            opened={isMenuOpen}
+            onClick={this.handleClick.bind(this)}
+          />
 
-        <SideMenu opened={isMenuOpen}>
-          <MenuList>
-            <MenuLink onClick={this.handleClick.bind(this)} to="/">
-              Home Page
-            </MenuLink>
-            <MenuLink onClick={this.handleClick.bind(this)} to="/tutorials">
-              Tutorials
-            </MenuLink>
-            <MenuLink onClick={this.handleClick.bind(this)} to="/showcase">
-              Showcase
-            </MenuLink>
-          </MenuList>
+          <SideMenu opened={isMenuOpen}>
+            <MenuList>
+              <MenuLink
+                onClick={this.handleClick.bind(this)}
+                to="/home"
+                className={window.location.href.includes("/home") && "active"}
+              >
+                Home Page
+              </MenuLink>
+              <MenuLink
+                onClick={this.handleClick.bind(this)}
+                to="/tutorials"
+                className={
+                  window.location.href.includes("/tutorials") && "active"
+                }
+              >
+                Tutorials
+              </MenuLink>
+              <MenuLink
+                onClick={this.handleClick.bind(this)}
+                to="/showcase"
+                className={
+                  window.location.href.includes("/showcase") && "active"
+                }
+              >
+                Showcase
+              </MenuLink>
+            </MenuList>
 
-          <MenuFooter onClick={this.handleClick.bind(this)}>
-            <MenuSubLink to="/about" align="right">
-              About
-            </MenuSubLink>
-          </MenuFooter>
-        </SideMenu>
-      </MenuNavMobile>
+            <MenuFooter onClick={this.handleClick.bind(this)}>
+              <MenuSubLink to="/about" align="right">
+                About
+              </MenuSubLink>
+            </MenuFooter>
+          </SideMenu>
+        </MenuNavMobile>
       </MenuContainer>
     );
   }
 }
 
 export default Menu;
-
