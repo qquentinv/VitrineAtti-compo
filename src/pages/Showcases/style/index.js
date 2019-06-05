@@ -10,7 +10,7 @@ export const Background = styled.div`
   position: absolute;
   display: flex;
   align-items: center;
-  justify-content:center;
+  justify-content: center;
   width: 100%;
   height: 100%;
   top: 0px;
@@ -58,7 +58,6 @@ export const Title = styled.h1`
 `;
 
 export const Button = styled.button`
-  /* Adapt the colors based on primary prop */
   background: ${props => (props.primary ? "#f29400" : "#f29400")};
   color: ${props => (props.primary ? "white" : "white")};
 
