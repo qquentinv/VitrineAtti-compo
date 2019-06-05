@@ -1,6 +1,14 @@
 import React from "react";
 import Img from "../../image/atti-compo.png";
-import { Image, Background, Ecrit, Content, StyledImage, Title } from "./style";
+import {
+  Image,
+  Background,
+  Ecrit,
+  Content,
+  StyledImage,
+  Title,
+  Button
+} from "./style";
 import { Container, BigText } from "atti-components";
 
 class Showcases extends React.Component {
@@ -28,6 +36,21 @@ class Showcases extends React.Component {
             armorum manus nequid novas tribunos ducitur manus sed nec ab
             Eusebium inter philosophus spiritum dignitatem increpabat.
           </BigText>
+          <div
+            style={{
+              display: "flex",
+              justifyContent: "flex-end",
+              margin: "15px"
+            }}
+          >
+            <Button
+              onClick={() => {
+                window.location.href = "https://atti-components.netlify.com/";
+              }}
+            >
+              View site
+            </Button>
+          </div>
         </Container>
       </Content>
     );
