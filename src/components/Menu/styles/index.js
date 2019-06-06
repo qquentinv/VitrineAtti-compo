@@ -16,6 +16,12 @@ export const MenuNavMobile = styled("nav")`
   height: 100%;
   padding: 20px;
   z-index: 3;
+
+  @media only screen and (max-width: ${({ theme }) =>
+      theme.breakpoints.mobileMax}) {
+    padding: 0;
+    margin-left: 10px;
+  }
 `;
 
 export const MenuOpenerLine = styled("div")`

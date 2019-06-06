@@ -1,5 +1,5 @@
 import React from "react";
-import { Button, Title, DivHeader, Align } from "./style";
+import { Button, Title, DivHeader, Align, Gitspan } from "./style";
 import Menu from "./../Menu";
 import GH1 from "./../../image/GitHub-Mark-Light-32px.png";
 import GH2 from "./../../image/GitHub-Mark-32px.png";
@@ -29,7 +29,7 @@ class Header extends React.Component {
           >
             <img src={GH1} alt="GitHub-img1" className="white" />
             <img src={GH2} alt="GitHub-img2" className="black" />
-            &nbsp; GitHub
+            <Gitspan style={{marginLeft:"8px"}}>GitHub</Gitspan>
           </Button>
         </Align>
       </DivHeader>

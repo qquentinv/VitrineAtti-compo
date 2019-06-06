@@ -32,54 +32,64 @@ export const Button = styled.button`
 
   @media only screen and (max-width: ${({ theme }) =>
       theme.breakpoints.mobileMax}) {
-    font-size: 0;
     border: 0;
-    margin: 15px;
+    margin: 0;
+    padding: 0;
+    margin-right: 10px;
   }
 `;
 
 export const Title = styled.h1`
   color: white;
   cursor: pointer;
-
   @media only screen and (max-width: ${({ theme }) =>
       theme.breakpoints.mobileMax}) {
-    font-size: ${({ theme }) => theme.fonts.fontSize.fs24};
+    font-size: 27px;
+    text-align: center;
   }
-`;
-
-export const Input = styled.input.attrs(({ size }) => ({
-  type: "text",
-  margin: size || "1em",
-  padding: size || "0.35em"
-}))`
-  color: black;
-  font-size: 1em;
-  border: 2px solid white;
-  border-radius: 3px;
-  margin: ${props => props.margin};
-  padding: ${props => props.padding};
 `;
 
 export const DivHeader = styled.div`
   background-color: #f29400;
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  position: relative;
+  height: 70px;
 `;
 
 export const Align = styled.div`
   display: flex;
-  width: 33.3%;
 
   &.left {
     justify-content: flex-start;
   }
 
   &.center {
+    padding: 0 45px;
+    position: absolute;
+    width: 100%;
     justify-content: center;
   }
 
   &.right {
     justify-content: flex-end;
+  }
+
+  @media only screen and (max-width: ${({ theme }) =>
+      theme.breakpoints.mobileMax}) {
+    justify-content: space-between;
+  }
+`;
+
+export const Gitspan = styled.span`
+  margin-left: 8px;
+  @media only screen and (max-width: ${({ theme }) =>
+      theme.breakpoints.mobileMax}) {
+    display: none;
+    &.center {
+      width: 100%;
+      justify-content: center;
+    }
   }
 `;

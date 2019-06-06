@@ -14,11 +14,11 @@ export const Content = styled.div`
 export const Li = styled.li`
   margin-bottom: 45px;
   cursor: pointer;
-  border-bottom: 3px solid currentcolor;
-
+  text-decoration: underline;
+  font-size: 30px;
   :hover {
     color: #f49700;
-    border-bottom: 3px solid currentcolor;
+    text-decoration: underline;
   }
 `;
 
@@ -37,7 +37,6 @@ export const Title = styled.h1`
 export const Liste = styled.div`
   display: flex;
   justify-content: center;
-  font-size: 40px;
 
   @media only screen and (max-width: ${({ theme }) =>
       theme.breakpoints.mobileMax}) {
