@@ -17,12 +17,18 @@ class Showcases extends React.Component {
             image={Attineos}
             link="https://www.attineos.com/"
             title={page}
-            desc=" Epigonum nec ducitur industria si Montius sed orator res nec et et
-        insimulasset Epigonum ostendens qui quaestor et philosophus sed
-        quaestor fabricarum intepesceret orator ducitur qui Eusebius
-        tribunos promittentes agitari Lycia philosophus quaerebatur inter
-        armorum manus nequid novas tribunos ducitur manus sed nec ab
-        Eusebium inter philosophus spiritum dignitatem increpabat."
+            desc=" As a Digital Service Company, Attineos claims to be different.
+
+            Based on exchange, on the attitude as well as on the skills of our consultants, our services support the transformation of information systems. 
+            
+            Looking in the same direction as our customers, we provide them with the know-how and technology to integrate it into their businesses and support them in achieving their objectives.
+            By promoting the success of our employees with transparency and confidence, we respect differences and develop potential.
+            
+            The personal development of our employees is a key element of our development. Based on respect, listening and proximity, your progress will be ours. Together, we will value entrepreneurship and initiative. 
+            
+            We are looking for enthusiastic profiles with a culture of surpassing oneself and continuous improvement.
+            
+            "
           />
         );
       case "Attisport":
@@ -31,12 +37,9 @@ class Showcases extends React.Component {
             image={Attisport}
             link="https://www.attisport.fr/"
             title={page}
-            desc=" Epigonum nec ducitur industria si Montius sed orator res nec et et
-        insimulasset Epigonum ostendens qui quaestor et philosophus sed
-        quaestor fabricarum intepesceret orator ducitur qui Eusebius
-        tribunos promittentes agitari Lycia philosophus quaerebatur inter
-        armorum manus nequid novas tribunos ducitur manus sed nec ab
-        Eusebium inter philosophus spiritum dignitatem increpabat."
+            desc=" Attisport is a betting website that is designed for Attineos' employees and customers.
+            It sets up a system of points that are won as a result of betting on different matches during a defined competition.
+            The winner is the person who has made the best bets and finishes with the highest number of points. Batches are thus set up for the first of each competition."
           />
         );
       case "Atrakeur":

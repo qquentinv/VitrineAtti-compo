@@ -1,13 +1,10 @@
 import React from "react";
-import { StyledCase, Button, Img } from "./style";
-import { Text } from "atti-components";
-
-
+import { StyledCase, Button, Img, StyledText } from "./style";
 
 class Case extends React.Component {
   render() {
     const { title, desc, image } = this.props;
-    const link = `/showcase/${title}`
+    const link = `/showcase/${title}`;
     return (
       <StyledCase>
         <Img
@@ -29,14 +26,14 @@ class Case extends React.Component {
             {title}
           </h1>
         </div>
-        <Text>{desc}</Text>
+        <StyledText>{desc}</StyledText>
         <Button
           onClick={() => {
             window.location.href = link;
           }}
           style={{ cursor: "pointer" }}
         >
-          En savoir +
+          More information
         </Button>
       </StyledCase>
     );

@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Text } from "atti-components";
 
 export const StyledCase = styled.div`
   background: ${props => (props.primary ? "white" : "white")};
@@ -29,4 +30,8 @@ export const Img = styled.img`
   height: auto;
   margin-bottom:20px
   box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2);
+`;
+
+export const StyledText = styled(Text)`
+  text-align: center;
 `;

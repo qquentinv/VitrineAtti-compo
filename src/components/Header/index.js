@@ -29,7 +29,7 @@ class Header extends React.Component {
           >
             <img src={GH1} alt="GitHub-img1" className="white" />
             <img src={GH2} alt="GitHub-img2" className="black" />
-            <Gitspan style={{marginLeft:"8px"}}>GitHub</Gitspan>
+            <Gitspan>GitHub</Gitspan>
           </Button>
         </Align>
       </DivHeader>

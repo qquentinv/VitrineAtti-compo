@@ -4,7 +4,7 @@ export const Button = styled.button`
   /* Adapt the colors based on primary prop */
   background: #f29400;
   color: ${({ theme }) => theme.colors.white};
-
+  z-index: 2;
   font-size: 1em;
   margin: 1em;
   padding: 0.45em 1em;
@@ -87,9 +87,5 @@ export const Gitspan = styled.span`
   @media only screen and (max-width: ${({ theme }) =>
       theme.breakpoints.mobileMax}) {
     display: none;
-    &.center {
-      width: 100%;
-      justify-content: center;
-    }
   }
 `;
