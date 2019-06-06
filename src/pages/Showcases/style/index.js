@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Image } from "atti-components";
+import { Image, BigText } from "atti-components";
 
 export const Img = styled(Image)`
   box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2);
@@ -55,6 +55,10 @@ export const Title = styled.h1`
   color: #f29400;
   text-align: center;
   margin-bottom: 30px;
+  @media only screen and (max-width: ${({ theme }) =>
+      theme.breakpoints.mobileMax}) {
+    font-size: 30px;
+  }
 `;
 
 export const Button = styled.button`
@@ -68,4 +72,11 @@ export const Button = styled.button`
   border-radius: 4px;
   display: flex;
   align-items: center;
+`;
+
+export const StyledBigText = styled(BigText)`
+  @media only screen and (max-width: ${({ theme }) =>
+      theme.breakpoints.mobileMax}) {
+    font-size: 16px;
+  }
 `;
