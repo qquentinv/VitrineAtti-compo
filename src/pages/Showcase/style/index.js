@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Content = styled.div`
   padding-top: 75px;
-  padding-bottom: 174px;
+  padding-bottom: 159px;
   background-color: rgb(247, 247, 247);
   @media only screen and (max-width: ${({ theme }) =>
       theme.breakpoints.mobileMax}) {

@@ -6,11 +6,11 @@ import {
   Ecrit,
   Content,
   StyledImage,
+  StyledLink,
   Title,
-  Button,
   StyledBigText
 } from "./style";
-import { Container,  } from "atti-components";
+import { Container } from "atti-components";
 
 class Showcases extends React.Component {
   render() {
@@ -36,20 +36,13 @@ class Showcases extends React.Component {
             armorum manus nequid novas tribunos ducitur manus sed nec ab
             Eusebium inter philosophus spiritum dignitatem increpabat.
           </StyledBigText>
-          <div
-            style={{
-              display: "flex",
-              justifyContent: "flex-end",
-              margin: "15px"
-            }}
-          >
-            <Button
-              onClick={() => {
-                window.location.href = "https://atti-components.netlify.com/";
-              }}
+          <div>
+            <StyledLink
+              href="https://atti-components.netlify.com/"
+              target="_blank"
             >
-              View site
-            </Button>
+              https://atti-components.netlify.com/
+            </StyledLink>
           </div>
         </Container>
       </Content>

@@ -6,8 +6,10 @@ export const StyledFooter = styled.footer`
 `;
 
 export const StyledText = styled.p`
-  padding: 17px;
   color: white;
+  padding: 15px;
+  margin-bottom:0px
+  font-size:19px;
 `;
 
 export const DivFooter = styled.div`

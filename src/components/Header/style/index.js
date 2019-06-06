@@ -20,8 +20,9 @@ export const Button = styled.button`
   }
 
   :hover {
-    background: ${({ theme }) => theme.colors.white};
-    color: #f29400 img.black {
+    background: white;
+    color: #f29400;
+    img.black {
       display: flex;
     }
     img.white {
@@ -30,7 +31,7 @@ export const Button = styled.button`
   }
 
   @media only screen and (max-width: ${({ theme }) =>
-  theme.breakpoints.mobileMax}) {
+      theme.breakpoints.mobileMax}) {
     font-size: 0;
     border: 0;
     margin: 15px;
@@ -42,7 +43,7 @@ export const Title = styled.h1`
   cursor: pointer;
 
   @media only screen and (max-width: ${({ theme }) =>
-  theme.breakpoints.mobileMax}) {
+      theme.breakpoints.mobileMax}) {
     font-size: ${({ theme }) => theme.fonts.fontSize.fs24};
   }
 `;
