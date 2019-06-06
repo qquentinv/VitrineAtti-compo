@@ -1,7 +1,12 @@
 import React from "react";
-import Imgatti from "../../image/puzzle.png";
-import { Case, Button, Ligne, Content, Title, Img } from "./style";
-import { Container, Text } from "atti-components";
+import Attineos from "../../image/attineos1.png";
+import CodeTrotteur from "../../image/code-trotteur1.png";
+import Attisport from "../../image/attisport1.png";
+import Atrakeur from "../../image/atrakeur1.png";
+import Case from "../../components/Case"
+
+import { Ligne, Content, Title } from "./style";
+import { Container } from "atti-components";
 
 class Showcase extends React.Component {
   render() {
@@ -10,138 +15,30 @@ class Showcase extends React.Component {
         <Container>
           <Title>Showcase</Title>
           <Ligne>
-            <Case>
-              <Img
-                onClick={() => {
-                  window.location.href = "/showcase/atti-compo";
-                }}
-                src={Imgatti}
-                alt="atti-compo"
-                style={{ cursor: "pointer" }}
-              />
-              <br />
-              <div>
-                <h1
-                  onClick={() => {
-                    window.location.href = "/showcase/atti-compo";
-                  }}
-                  style={{ cursor: "pointer" }}
-                >
-                  Explain
-                </h1>
-              </div>
-              <Text>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
-                id pretium ipsum.
-              </Text>
-              <Button
-                onClick={() => {
-                  window.location.href = "/showcase/atti-compo";
-                }}
-                style={{ cursor: "pointer" }}
-              >
-                En savoir +{" "}
-              </Button>
-            </Case>
-            <Case>
-              <Img
-                onClick={() => {
-                  window.location.href = "/showcase/atti-compo";
-                }}
-                src={Imgatti}
-                alt="atti-compo"
-                style={{ cursor: "pointer" }}
-              />
-              <br />
-              <div>
-                <h1
-                  onClick={() => {
-                    window.location.href = "/showcase/atti-compo";
-                  }}
-                  style={{ cursor: "pointer" }}
-                >
-                  Explain
-                </h1>
-              </div>
-              <Text>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
-                id pretium ipsum.
-              </Text>
-              <Button
-                onClick={() => {
-                  window.location.href = "/showcase/atti-compo";
-                }}
-                style={{ cursor: "pointer" }}
-              >
-                En savoir +{" "}
-              </Button>
-            </Case>
-            <Case>
-              <Img
-                onClick={() => {
-                  window.location.href = "/showcase/atti-compo";
-                }}
-                src={Imgatti}
-                alt="atti-compo"
-                style={{ cursor: "pointer" }}
-              />
-              <br />
-              <div>
-                <h1
-                  onClick={() => {
-                    window.location.href = "/showcase/atti-compo";
-                  }}
-                  style={{ cursor: "pointer" }}
-                >
-                  Explain
-                </h1>
-              </div>
-              <Text>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
-                id pretium ipsum.
-              </Text>
-              <Button
-                onClick={() => {
-                  window.location.href = "/showcase/atti-compo";
-                }}
-                style={{ cursor: "pointer" }}
-              >
-                En savoir +{" "}
-              </Button>
-            </Case>
-            <Case>
-              <Img
-                onClick={() => {
-                  window.location.href = "/showcase/atti-compo";
-                }}
-                src={Imgatti}
-                alt="atti-compo"
-                style={{ cursor: "pointer" }}
-              />
-              <br />
-              <div>
-                <h1
-                  onClick={() => {
-                    window.location.href = "/showcase/atti-compo";
-                  }}
-                  style={{ cursor: "pointer" }}
-                >
-                  Explain
-                </h1>
-              </div>
-              <Text>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
-                id pretium ipsum.
-              </Text>
-              <Button
-                onClick={() => {
-                  window.location.href = "/showcase/atti-compo";
-                }}
-                style={{ cursor: "pointer" }}
-              >
-                En savoir +{" "}
-              </Button>
-            </Case>
+            <Case
+              title="Attineos"
+              desc="dfshvgidqsfjgndpqsnjgfpodsgnfdosnfgdfjisn"
+              link="/showcase/attineos"
+              image={Attineos}
+            />
+            <Case
+              title="Attisport"
+              desc="dfshvgidqsfjgndpqsnjgfpodsgnfdosnfgdfjisn"
+              link="/showcase/attisport"
+              image={Attisport}
+            />
+            <Case
+              title="Atrakeur"
+              desc="dfshvgidqsfjgndpqsnjgfpodsgnfdosnfgdfjisn"
+              link="/showcase/atrakeur"
+              image={Atrakeur}
+            />
+            <Case
+              title="Code-trotteur"
+              desc="dfshvgidqsfjgndpqsnjgfpodsgnfdosnfgdfjisn"
+              link="/showcase/code-trotteur"
+              image={CodeTrotteur}
+            />
           </Ligne>
         </Container>
       </Content>
