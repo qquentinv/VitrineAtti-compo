@@ -7,7 +7,7 @@ export const Content = styled.div`
   @media only screen and (max-width: ${({ theme }) =>
       theme.breakpoints.mobileMax}) {
         padding-top: 50px;
-        padding-bottom: 72x;
+        padding-bottom: 124px;
   }
 `;
 

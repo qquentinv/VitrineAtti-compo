@@ -30,10 +30,10 @@ export const Content = styled.div`
   padding-top: 100px;
   padding-bottom: 174px;
   @media only screen and (max-width: ${({ theme }) =>
-  theme.breakpoints.mobileMax}) {
+      theme.breakpoints.mobileMax}) {
     padding-top: 50px;
-    padding-bottom: 87x;
-}
+    padding-bottom: 124px;
+  }
 `;
 
 export const PresentationTxt = styled.div`
@@ -58,7 +58,7 @@ export const PresentationBlock = styled.div`
   margintop: 55px;
   marginbottom: 70px;
   @media only screen and (max-width: ${({ theme }) =>
-  theme.breakpoints.mobileMax}) {
+      theme.breakpoints.mobileMax}) {
     flex-wrap: wrap;
   }
 `;
