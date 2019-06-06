@@ -31,7 +31,7 @@ class App extends React.Component {
             <Route exact path="/tutorials" component={Tutorials} />
             <Route exact path="/tutorials/explain" component={TutoContent} />
             <Route exact path="/showcase" component={Showcase} />
-            <Route exact path="/showcase/atti-compo" component={Showcases} />
+            <Route exact path="/showcase/:showcaseName" component={Showcases} />
             <Route path="/about" component={About} />
             <Footer />
           </div>

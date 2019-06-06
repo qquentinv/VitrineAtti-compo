@@ -2,9 +2,12 @@ import React from "react";
 import { StyledCase, Button, Img } from "./style";
 import { Text } from "atti-components";
 
+
+
 class Case extends React.Component {
   render() {
-    const { title, desc, link, image } = this.props;
+    const { title, desc, image } = this.props;
+    const link = `/showcase/${title}`
     return (
       <StyledCase>
         <Img
