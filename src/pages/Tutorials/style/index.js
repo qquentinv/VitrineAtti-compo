@@ -11,17 +11,6 @@ export const Content = styled.div`
   }
 `;
 
-export const Li = styled.li`
-  margin-bottom: 45px;
-  cursor: pointer;
-  text-decoration: underline;
-  font-size: 30px;
-  :hover {
-    color: #f49700;
-    text-decoration: underline;
-  }
-`;
-
 export const Title = styled.h1`
   color: #f29400;
   font-size: 40px;

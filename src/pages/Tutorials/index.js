@@ -1,6 +1,7 @@
 import React from "react";
-import { Content, Li, Liste, Title } from "./style";
-import { Container} from "atti-components";
+import { Content, Title, Liste } from "./style";
+import { Container } from "atti-components";
+import LiPageTuto from "../../components/LiPageTuto";
 
 class Tutorials extends React.Component {
   render() {
@@ -8,45 +9,29 @@ class Tutorials extends React.Component {
       <Content>
         <Container>
           <Title>Tutorials</Title>
-          <Liste>  
-              <ul>
-                <Li
-                  onClick={() => {
-                    window.location.href = "/tutorials/explain";
-                  }}
-                >
-                  Latius Sericus palaestrita vincula ea
-                </Li>
-                <Li
-                  onClick={() => {
-                    window.location.href = "/tutorials/explain";
-                  }}
-                >
-                  Latius multitudine repellere educata superabatur
-                </Li>
-                <Li
-                  onClick={() => {
-                    window.location.href = "/tutorials/explain";
-                  }}
-                >
-                  Per per constrinxerunt membrorum corpora
-                </Li>
-                <Li
-                  onClick={() => {
-                    window.location.href = "/tutorials/explain";
-                  }}
-                >
-                  {" "}
-                  Enim Ad difficiles istum honoribus
-                </Li>
-                <Li
-                  onClick={() => {
-                    window.location.href = "/tutorials/explain";
-                  }}
-                >
-                  Per castra Galli praepotens perferens
-                </Li>
-              </ul>
+          <Liste>
+            <ul>
+              <LiPageTuto
+                libelle="Aerumnis medetur non adstantem rectore"
+                url="tuto1"
+              />
+              <LiPageTuto
+                libelle="Magna inter manus fabricarum Lycia"
+                url="tuto2"
+              />
+              <LiPageTuto
+                libelle="Quemquam ullo nullus homines enim"
+                url="tuto3"
+              />
+              <LiPageTuto
+                libelle="Puta ignorantes annuos indumentorum ignorantes"
+                url="tuto4"
+              />
+              <LiPageTuto
+                libelle="Amplificatis matris rabie rabie efferebantur"
+                url="tuto5"
+              />
+            </ul>
           </Liste>
         </Container>
       </Content>

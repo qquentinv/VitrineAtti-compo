@@ -29,7 +29,7 @@ class App extends React.Component {
             <Header />
             <Route exact path="/" component={HomePage} />
             <Route exact path="/tutorials" component={Tutorials} />
-            <Route exact path="/tutorials/explain" component={TutoContent} />
+            <Route exact path="/tutorials/:tutorialName" component={TutoContent} />
             <Route exact path="/showcase" component={Showcase} />
             <Route exact path="/showcase/:showcaseName" component={Showcases} />
             <Route path="/about" component={About} />

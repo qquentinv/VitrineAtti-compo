@@ -22,7 +22,7 @@ class Vitrine extends React.Component {
               window.location.target = "_blank";
             }}
           >
-            <Ecrit>Allez sur la page</Ecrit>
+            <Ecrit>Go on the page !</Ecrit>
           </Background>
         </StyledImage>
         <Title>{title}</Title>
