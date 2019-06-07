@@ -60,11 +60,10 @@ export const StyledBigText = styled(BigText)`
 
 export const StyledLink = styled(Link)`
   color: #f29400;
-  border-bottom: 0
+  border-bottom: 0;
   font-size: 20px;
-  
+
   :hover {
     color: #f29400;
-    border-bottom: 0;
   }
 `;

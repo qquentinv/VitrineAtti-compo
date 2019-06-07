@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const Button = styled.button`
-  /* Adapt the colors based on primary prop */
   background: #f29400;
   color: ${({ theme }) => theme.colors.white};
   z-index: 2;

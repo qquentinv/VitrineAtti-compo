@@ -28,7 +28,7 @@ export const Button = styled.button`
 export const Img = styled.img`
   max-width: 100%;
   height: auto;
-  margin-bottom:20px
+  margin-bottom: 20px;
   box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2);
 `;
 
