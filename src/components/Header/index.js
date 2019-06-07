@@ -3,6 +3,7 @@ import { Button, Title, DivHeader, Align, Gitspan } from "./style";
 import Menu from "./../Menu";
 import GH1 from "./../../image/GitHub-Mark-Light-32px.png";
 import GH2 from "./../../image/GitHub-Mark-32px.png";
+import { history } from "../../";
 
 class Header extends React.Component {
   render() {
@@ -14,7 +15,7 @@ class Header extends React.Component {
         <Align className="center">
           <Title
             onClick={() => {
-              window.location.href = "/";
+              history.push("/");
             }}
           >
             Atti-components

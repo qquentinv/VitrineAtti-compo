@@ -19,7 +19,6 @@ class Vitrine extends React.Component {
           <Background
             onClick={() => {
               window.location.href = link;
-              window.location.target = "_blank";
             }}
           >
             <Ecrit>Go on the page !</Ecrit>

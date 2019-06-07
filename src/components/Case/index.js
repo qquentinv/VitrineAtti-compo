@@ -1,5 +1,6 @@
 import React from "react";
 import { StyledCase, Button, Img, StyledText } from "./style";
+import { history } from "../../";
 
 class Case extends React.Component {
   render() {
@@ -9,7 +10,7 @@ class Case extends React.Component {
       <StyledCase>
         <Img
           onClick={() => {
-            window.location.href = link;
+            history.push(link);
           }}
           src={image}
           alt={title}
@@ -19,7 +20,7 @@ class Case extends React.Component {
         <div>
           <h1
             onClick={() => {
-              window.location.href = link;
+              history.push(link);
             }}
             style={{ cursor: "pointer" }}
           >
@@ -29,7 +30,7 @@ class Case extends React.Component {
         <StyledText>{desc}</StyledText>
         <Button
           onClick={() => {
-            window.location.href = link;
+            history.push(link);
           }}
           style={{ cursor: "pointer" }}
         >

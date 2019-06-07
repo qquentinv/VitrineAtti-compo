@@ -9,7 +9,6 @@ import {
 } from "./pages";
 import { Header, Footer } from "./components";
 import { ThemeProvider, defaultTheme } from "atti-components";
-
 import { BrowserRouter as Router, Route } from "react-router-dom";
 
 console.log(window.location);
@@ -17,25 +16,27 @@ class App extends React.Component {
   render() {
     return (
       <ThemeProvider theme={defaultTheme}>
-        <Router>
-          <div
-            style={{
-              backgroundColor: "white",
-              position: "relative",
-              minHeight: "100vh",
-              minWidth: "75vw"
-            }}
-          >
-            <Header />
-            <Route exact path="/" component={HomePage} />
-            <Route exact path="/tutorials" component={Tutorials} />
-            <Route exact path="/tutorials/:tutorialName" component={TutoContent} />
-            <Route exact path="/showcase" component={Showcase} />
-            <Route exact path="/showcase/:showcaseName" component={Showcases} />
-            <Route path="/about" component={About} />
-            <Footer />
-          </div>
-        </Router>
+        <div
+          style={{
+            backgroundColor: "white",
+            position: "relative",
+            minHeight: "100vh",
+            minWidth: "75vw"
+          }}
+        >
+          <Header />
+          <Route exact path="/" component={HomePage} />
+          <Route exact path="/tutorials" component={Tutorials} />
+          <Route
+            exact
+            path="/tutorials/:tutorialName"
+            component={TutoContent}
+          />
+          <Route exact path="/showcase" component={Showcase} />
+          <Route exact path="/showcase/:showcaseName" component={Showcases} />
+          <Route path="/about" component={About} />
+          <Footer />
+        </div>
       </ThemeProvider>
     );
   }
