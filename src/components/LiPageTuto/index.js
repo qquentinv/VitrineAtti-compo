@@ -1,5 +1,5 @@
 import React from "react";
-import { Li, Liste } from "./style";
+import { Li } from "./style";
 import { history } from "../../";
 
 class LiPageTuto extends React.Component {

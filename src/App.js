@@ -9,7 +9,7 @@ import {
 } from "./pages";
 import { Header, Footer } from "./components";
 import { ThemeProvider, defaultTheme } from "atti-components";
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { Route } from "react-router-dom";
 
 console.log(window.location);
 class App extends React.Component {
