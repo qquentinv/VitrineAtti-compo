@@ -6,7 +6,8 @@ import {
   StyledImage,
   StyledLink,
   Title,
-  StyledBigText
+  StyledBigText,
+  StyledBreadcrumb
 } from "./style";
 
 class Vitrine extends React.Component {
@@ -14,6 +15,14 @@ class Vitrine extends React.Component {
     const { image, link, title, desc } = this.props;
     return (
       <div>
+        <StyledBreadcrumb
+          elements={[
+            { name: "Home", url: "/" },
+            { name: "Showcase", url: "/showcase" },
+            { name: title }
+          ]}
+          separator={">"}
+        />
         <StyledImage>
           <Img src={image} alt={title} />
           <Background

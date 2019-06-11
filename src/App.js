@@ -11,7 +11,6 @@ import { Header, Footer } from "./components";
 import { ThemeProvider, defaultTheme } from "atti-components";
 import { Route } from "react-router-dom";
 
-console.log(window.location);
 class App extends React.Component {
   render() {
     return (

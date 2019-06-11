@@ -25,7 +25,7 @@ class Showcases extends React.Component {
             By promoting the success of our employees with transparency and confidence, we respect differences and develop potential.
             
             The personal development of our employees is a key element of our development. Based on respect, listening and proximity, your progress will be ours. Together, we will value entrepreneurship and initiative. 
-            
+ 
             We are looking for enthusiastic profiles with a culture of surpassing oneself and continuous improvement.
             
             "
@@ -78,7 +78,6 @@ class Showcases extends React.Component {
   render() {
     const { match } = this.props;
     const page = match.params.showcaseName;
-    console.log(page);
     return (
       <Content>
         <Container>{this.fct(page)}</Container>

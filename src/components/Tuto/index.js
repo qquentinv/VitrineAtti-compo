@@ -1,5 +1,10 @@
 import React from "react";
-import { StyledHeader2, StyledHeader3, StyledBigText } from "./style";
+import {
+  StyledHeader2,
+  StyledHeader3,
+  StyledBigText,
+  StyledBreadcrumb
+} from "./style";
 
 class Tuto extends React.Component {
   render() {
@@ -7,6 +12,14 @@ class Tuto extends React.Component {
     return (
       <div>
         <StyledHeader2>{title}</StyledHeader2>
+        <StyledBreadcrumb
+          elements={[
+            { name: "Home", url: "/" },
+            { name: "Tutorials", url: "/tutorials" },
+            { name: title }
+          ]}
+          separator={">"}
+        />
         <StyledHeader3>{subtitle1}</StyledHeader3>
         <StyledBigText>{p1}</StyledBigText>
         <StyledHeader3>{subtitle2}</StyledHeader3>

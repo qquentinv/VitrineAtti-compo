@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Image, BigText, Link } from "atti-components";
+import { Image, BigText, Link, Breadcrumb } from "atti-components";
 
 export const Img = styled(Image)`
   box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2);
@@ -65,5 +65,22 @@ export const StyledLink = styled(Link)`
 
   :hover {
     color: #f29400;
+  }
+`;
+
+export const StyledBreadcrumb = styled(Breadcrumb)`
+  padding-bottom: 20px;
+  a {
+    margin-right: 13px;
+    font-size: 24px;
+
+    :hover {
+      text-decoration: none;
+    }
+  }
+
+  span {
+    font-size: 24px;
+    margin-left: 13px;
   }
 `;

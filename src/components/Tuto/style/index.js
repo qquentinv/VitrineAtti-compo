@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Header2, Header3, BigText } from "atti-components";
+import { Header2, Header3, BigText, Breadcrumb } from "atti-components";
 
 export const StyledHeader2 = styled(Header2)`
   margin-bottom: 45px;
@@ -25,5 +25,22 @@ export const StyledBigText = styled(BigText)`
   @media only screen and (max-width: ${({ theme }) =>
       theme.breakpoints.mobileMax}) {
     font-size: 16px;
+  }
+`;
+
+export const StyledBreadcrumb = styled(Breadcrumb)`
+  padding-bottom: 20px;
+  a {
+    margin-right: 13px;
+    font-size: 24px;
+
+    :hover {
+      text-decoration: none;
+    }
+  }
+
+  span {
+    font-size: 24px;
+    margin-left: 13px;
   }
 `;

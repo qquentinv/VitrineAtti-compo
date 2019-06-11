@@ -149,8 +149,6 @@ class TutoContent extends React.Component {
   render() {
     const { match } = this.props;
     const nomPage = match.params.tutorialName;
-    console.log(nomPage);
-
     return (
       <Content>
         <Container>{this.affichage(nomPage)}</Container>
