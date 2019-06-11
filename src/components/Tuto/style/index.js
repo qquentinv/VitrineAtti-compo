@@ -29,6 +29,7 @@ export const StyledBigText = styled(BigText)`
 `;
 
 export const StyledBreadcrumb = styled(Breadcrumb)`
+  margin: 25px;
   padding-bottom: 20px;
   a {
     margin-right: 13px;
