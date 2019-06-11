@@ -71,7 +71,6 @@ export const StyledLink = styled(Link)`
 export const StyledBreadcrumb = styled(Breadcrumb)`
   padding-bottom: 20px;
   a {
-    margin-right: 13px;
     font-size: 24px;
 
     :hover {
@@ -81,6 +80,18 @@ export const StyledBreadcrumb = styled(Breadcrumb)`
 
   span {
     font-size: 24px;
-    margin-left: 13px;
   }
 `;
+
+export const customTheme = {
+  components: {
+    breadcrumb: {
+      breadcrumbSeparator: {
+        spaces: {
+          marginLeft: "16px",
+          marginRight: "16px"
+        }
+      }
+    }
+  }
+};

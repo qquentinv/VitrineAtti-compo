@@ -7,22 +7,26 @@ import {
   StyledLink,
   Title,
   StyledBigText,
-  StyledBreadcrumb
+  StyledBreadcrumb,
+  customTheme
 } from "./style";
+import { ThemeProvider } from "atti-components";
 
 class Vitrine extends React.Component {
   render() {
     const { image, link, title, desc } = this.props;
     return (
       <div>
-        <StyledBreadcrumb
-          elements={[
-            { name: "Home", url: "/" },
-            { name: "Showcase", url: "/showcase" },
-            { name: title }
-          ]}
-          separator={">"}
-        />
+        <ThemeProvider otherTheme={customTheme}>
+          <StyledBreadcrumb
+            elements={[
+              { name: "Home", url: "/" },
+              { name: "Showcase", url: "/showcase" },
+              { name: title }
+            ]}
+            separator={">"}
+          />
+        </ThemeProvider>
         <StyledImage>
           <Img src={image} alt={title} />
           <Background

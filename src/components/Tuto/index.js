@@ -3,8 +3,11 @@ import {
   StyledHeader2,
   StyledHeader3,
   StyledBigText,
+  customTheme,
   StyledBreadcrumb
 } from "./style";
+import { history } from "../../";
+import { ThemeProvider } from "atti-components";
 
 class Tuto extends React.Component {
   render() {
@@ -12,14 +15,20 @@ class Tuto extends React.Component {
     return (
       <div>
         <StyledHeader2>{title}</StyledHeader2>
-        <StyledBreadcrumb
-          elements={[
-            { name: "Home", url: "/" },
-            { name: "Tutorials", url: "/tutorials" },
-            { name: title }
-          ]}
-          separator={">"}
-        />
+        <ThemeProvider otherTheme={customTheme}>
+          <StyledBreadcrumb
+            elements={[
+              { name: "Home", url: "/" },
+              {
+                name: "Tutorials",
+                url:
+                  "/tutorials" /*(e => e.preventDefault(), history.push("/tutorials"))*/
+              },
+              { name: title }
+            ]}
+            separator={">"}
+          />
+        </ThemeProvider>
         <StyledHeader3>{subtitle1}</StyledHeader3>
         <StyledBigText>{p1}</StyledBigText>
         <StyledHeader3>{subtitle2}</StyledHeader3>
