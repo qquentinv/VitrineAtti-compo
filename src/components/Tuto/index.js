@@ -6,6 +6,7 @@ import {
   customTheme,
   StyledBreadcrumb
 } from "./style";
+import { history } from "../../";
 import { ThemeProvider } from "atti-components";
 
 class Tuto extends React.Component {
@@ -17,11 +18,21 @@ class Tuto extends React.Component {
         <ThemeProvider otherTheme={customTheme}>
           <StyledBreadcrumb
             elements={[
-              { name: "Home", url: "/" },
+              {
+                name: "Home",
+                url: "/",
+                onClick: e => {
+                  e.preventDefault();
+                  history.push("/");
+                }
+              },
               {
                 name: "Tutorials",
-                url:
-                  "/tutorials" /*(e => e.preventDefault(), history.push("/tutorials"))*/
+                url: "/tutorials",
+                onClick: e => {
+                  e.preventDefault();
+                  history.push("/tutorials");
+                }
               },
               { name: title }
             ]}

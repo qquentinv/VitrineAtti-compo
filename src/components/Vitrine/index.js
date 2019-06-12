@@ -10,6 +10,7 @@ import {
   StyledBreadcrumb,
   customTheme
 } from "./style";
+import { history } from "../../";
 import { ThemeProvider } from "atti-components";
 
 class Vitrine extends React.Component {
@@ -20,8 +21,22 @@ class Vitrine extends React.Component {
         <ThemeProvider otherTheme={customTheme}>
           <StyledBreadcrumb
             elements={[
-              { name: "Home", url: "/" },
-              { name: "Showcase", url: "/showcase" },
+              {
+                name: "Home",
+                url: "/",
+                onClick: e => {
+                  e.preventDefault();
+                  history.push("/");
+                }
+              },
+              {
+                name: "Showcase",
+                url: "/showcase",
+                onClick: e => {
+                  e.preventDefault();
+                  history.push("/showcase");
+                }
+              },
               { name: title }
             ]}
             separator={">"}
