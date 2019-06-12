@@ -37,10 +37,18 @@ export const StyledBreadcrumb = styled(Breadcrumb)`
     :hover {
       text-decoration: none;
     }
+    @media only screen and (max-width: ${({ theme }) =>
+        theme.breakpoints.mobileMax}) {
+      font-size: 16px;
+    }
   }
 
   span {
     font-size: 24px;
+    @media only screen and (max-width: ${({ theme }) =>
+        theme.breakpoints.mobileMax}) {
+      font-size: 16px;
+    }
   }
 `;
 
