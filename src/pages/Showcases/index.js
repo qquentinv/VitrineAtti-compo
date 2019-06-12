@@ -31,7 +31,7 @@ class Showcases extends React.Component {
             image={Attisport}
             link="https://www.attisport.fr/"
             title={page}
-            desc=" Attisport is a betting website that is designed for Attineos' employees and customers.
+            desc=" Attisport is a betting website that is designed for Attineos employees and customers.
             It sets up a system of points that are won as a result of betting on different matches during a defined competition.
             The winner is the person who has made the best bets and finishes with the highest number of points. Batches are thus set up for the first of each competition."
           />
