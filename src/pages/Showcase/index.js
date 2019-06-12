@@ -4,7 +4,6 @@ import CodeTrotteur from "../../image/code-trotteur1.png";
 import Attisport from "../../image/attisport1.png";
 import Atrakeur from "../../image/atrakeur1.png";
 import Case from "../../components/Case";
-
 import { Ligne, Content, Title } from "./style";
 import { Container } from "atti-components";
 
