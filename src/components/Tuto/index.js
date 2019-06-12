@@ -6,7 +6,6 @@ import {
   customTheme,
   StyledBreadcrumb
 } from "./style";
-import { history } from "../../";
 import { ThemeProvider } from "atti-components";
 
 class Tuto extends React.Component {
