@@ -9,7 +9,8 @@ import {
   PresentationTxt,
   PresentationBlock,
   Title,
-  Subtitle
+  Subtitle,
+  Coding
 } from "./style";
 import { Container } from "atti-components";
 
@@ -48,13 +49,13 @@ class HomePage extends React.Component {
                 To use this library, simply add it as a dependency to your yarn
                 or npm project by running the command:
               </p>
-              <code>
-                <span>npm install --save atti-components</span>
+              <Coding>
+                <span>$ npm install --save atti-components</span>
                 <br />
                 <Comment>{"// Or"}</Comment>
                 <br />
-                <span>yarn add atti-components</span>
-              </code>
+                <span>$ yarn add atti-components</span>
+              </Coding>
               <br />
               <br />
               <h5>Unstable Installation</h5>
@@ -63,13 +64,13 @@ class HomePage extends React.Component {
                 everyone to test upcoming features. To use the lastest
                 prerelease, simply run:
               </p>
-              <code>
-                <span>npm install --save atti-components@next</span>
+              <Coding>
+                <span>$ npm install --save atti-components@next</span>
                 <br />
                 <Comment>{"// Or"}</Comment>
                 <br />
-                <span>yarn add atti-components@next</span>
-              </code>
+                <span>$ yarn add atti-components@next</span>
+              </Coding>
               <br />
               <br />
             </Block>
@@ -80,7 +81,7 @@ class HomePage extends React.Component {
                 or Web components:
               </p>
               <div>
-                <code className="code javascript">
+                <Coding className="code javascript">
                   <Comment>{"// Import Web components"}</Comment>
                   <br />
                   <span>{this.codeUse1}</span>
@@ -90,7 +91,7 @@ class HomePage extends React.Component {
                   <br />
                   <span>{this.codeUse2}</span>
                   <br />
-                </code>
+                </Coding>
               </div>
             </Block>
           </PresentationBlock>

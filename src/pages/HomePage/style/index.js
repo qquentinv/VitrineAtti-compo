@@ -10,8 +10,8 @@ export const Block = styled.div`
   width: 50%;
   padding: 25px;
   border: 1px solid lightgrey;
-
-  & + & {
+  border-radius: 2px; 
+   & + & {
     margin-left: 30px;
   }
 
@@ -55,8 +55,6 @@ export const PresentationTop = styled.div`
 
 export const PresentationBlock = styled.div`
   display: flex;
-  margintop: 55px;
-  marginbottom: 70px;
   @media only screen and (max-width: ${({ theme }) =>
       theme.breakpoints.mobileMax}) {
     flex-wrap: wrap;
@@ -69,4 +67,12 @@ export const Title = styled.h1`
 
 export const Subtitle = styled.h3`
   margin-top: 30px;
+`;
+
+export const Coding = styled.div`
+  background-color: rgb(230, 230, 230);
+  padding: 10px;
+  border-radius: 3px;
+  box-shadow: 1px rgb(247, 247, 247);
+  font-family: Consolas;
 `;
