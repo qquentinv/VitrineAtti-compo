@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
+import { Menu } from "atti-components";
 
 export const MenuContainer = styled("div")`
   display: flex;
@@ -157,4 +158,31 @@ export const MenuLink = styled(Link)`
     color: #f29400;
     text-decoration: none;
   }
+`;
+
+export const MenuLinkAtti = styled(Menu)`
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  height: auto;
+  width: 100%;
+  color: white;
+  text-align: center;
+  margin: 5px;
+  padding: 5px;
+  a {
+    font-weight: bold;
+    font-size: 20px;
+  }
+  text-decoration: none;
+  cursor: pointer;
+  :hover {
+    background-color: white;
+    a {
+      background-color: white;
+      color: #f29400;
+      text-decoration: none;
+    }
+  }
+  background-color: #f29400;
 `;

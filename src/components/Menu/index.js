@@ -9,7 +9,8 @@ import {
   MenuOpenerLine,
   MenuSubLink,
   SideMenu,
-  MenuContainer
+  MenuContainer,
+  MenuLinkAtti
 } from "./styles";
 
 class Menu extends Component {
@@ -52,15 +53,9 @@ class Menu extends Component {
               >
                 Home Page
               </MenuLink>
-              <MenuLink
-                onClick={this.handleClick.bind(this)}
-                to="/documentation/"
-                className={
-                  window.location.href.includes("/documentation") && "active"
-                }
-              >
-                Documentation
-              </MenuLink>
+              <MenuLinkAtti
+                elements={[{ name: "Documentation", url: "/documentation/" }]}
+              />
               <MenuLink
                 onClick={this.handleClick.bind(this)}
                 to="/tutorials"
