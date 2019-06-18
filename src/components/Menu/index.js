@@ -54,7 +54,7 @@ class Menu extends Component {
               </MenuLink>
               <MenuLink
                 onClick={this.handleClick.bind(this)}
-                to="/documentation"
+                to="/documentation/"
                 className={
                   window.location.href.includes("/documentation") && "active"
                 }
