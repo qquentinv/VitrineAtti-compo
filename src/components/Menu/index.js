@@ -54,7 +54,16 @@ class Menu extends Component {
                 Home Page
               </MenuLink>
               <MenuLinkAtti
-                elements={[{ name: "Documentation", url: "/docs/" }]}
+                elements={[
+                  {
+                    name: "Documentation",
+                    url: "/docs/",
+                    onClick: e => {
+                      e.preventDefault();
+                      history.push("/");
+                    }
+                  }
+                ]}
               />
               <MenuLink
                 onClick={this.handleClick.bind(this)}

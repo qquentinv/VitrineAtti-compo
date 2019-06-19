@@ -25,6 +25,7 @@ class App extends React.Component {
         >
           <Header />
           <Route exact path="/" component={HomePage} />
+          <Route exact path="/docs" />
           <Route exact path="/tutorials" component={Tutorials} />
           <Route
             exact
