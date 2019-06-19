@@ -58,11 +58,7 @@ class Menu extends Component {
                 elements={[
                   {
                     name: "Documentation",
-                    url: "/docs/",
-                    onClick: e => {
-                      e.preventDefault();
-                      history.push("/");
-                    }
+                    url: "/docs/"
                   }
                 ]}
               />
