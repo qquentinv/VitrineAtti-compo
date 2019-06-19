@@ -12,6 +12,7 @@ import {
   MenuContainer,
   MenuLinkAtti
 } from "./styles";
+import { history } from "../../";
 
 class Menu extends Component {
   state = {
