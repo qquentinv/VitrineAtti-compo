@@ -54,6 +54,9 @@ class Menu extends Component {
               >
                 Home Page
               </MenuLink>
+              <MenuLink onClick={this.handleClick.bind(this)} to="/docs/">
+                doc
+              </MenuLink>
               <MenuLinkAtti
                 elements={[
                   {
@@ -61,6 +64,7 @@ class Menu extends Component {
                     url: "/docs/"
                   }
                 ]}
+                isResponsive={false}
               />
               <MenuLink
                 onClick={this.handleClick.bind(this)}
