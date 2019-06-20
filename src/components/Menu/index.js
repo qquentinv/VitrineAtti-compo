@@ -54,9 +54,6 @@ class Menu extends Component {
               >
                 Home Page
               </MenuLink>
-              <MenuLink onClick={this.handleClick.bind(this)} to="/docs/">
-                doc
-              </MenuLink>
               <MenuLinkAtti
                 elements={[
                   {
