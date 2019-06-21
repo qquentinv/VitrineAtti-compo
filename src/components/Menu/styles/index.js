@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
-import { Menu } from "atti-components";
 
 export const MenuContainer = styled("div")`
   display: flex;
