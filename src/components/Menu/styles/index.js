@@ -160,7 +160,7 @@ export const MenuLink = styled(Link)`
   }
 `;
 
-export const MenuLinkAtti = styled(Menu)`
+export const MenuLinkAtti = styled.a`
   display: flex;
   position: relative;
   flex-direction: column;
@@ -170,19 +170,18 @@ export const MenuLinkAtti = styled(Menu)`
   text-align: center;
   margin: 5px;
   padding: 5px;
-  a {
-    font-weight: bold;
-    font-size: 20px;
-  }
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji,
+    Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-weight: bold;
+  font-size: 20px;
   text-decoration: none;
   cursor: pointer;
+
   :hover {
     background-color: white;
-    a {
-      background-color: white;
-      color: #f29400;
-      text-decoration: none;
-    }
+    color: #f29400;
+    text-decoration: none;
   }
   background-color: #f29400;
 `;
