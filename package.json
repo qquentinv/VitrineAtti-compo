@@ -5,19 +5,19 @@
   "dependencies": {
     "@babel/plugin-proposal-class-properties": "^7.4.4",
     "@babel/plugin-proposal-export-namespace-from": "^7.2.0",
-    "atti-components": "0.1.0-rc28",
+    "atti-components": "^0.2.1",
     "bootstrap": "^4.3.1",
     "history": "^4.9.0",
     "lodash": "^4.17.11",
     "module-resolver": "^1.0.0",
     "react": "^16.8.6",
     "react-awesome-button": "^6.1.0",
-    "react-burger-menu": "^2.6.10",
+    "react-burger-menu": "^2.6.13",
     "react-dom": "^16.8.6",
     "react-router-dom": "^5.0.0",
-    "react-scripts": "3.0.1",
+    "react-scripts": "^3.3.0",
     "react-sidebar": "^3.0.2",
-    "styled-components": "^4.2.0"
+    "styled-components": "^5.0.0"
   },
   "scripts": {
     "start": "react-scripts start",
